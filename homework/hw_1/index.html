@@ -8,24 +8,27 @@
 
 </head>
 <body>
-	<header>
-		<div class="h-top fleft logo">
-			lorem ipsum news
-		</div>
-		<div class="h-top fright ">
-			<a href="#" onclick="document.getElementById('login').style.display='block'; return false;" title="Войти">Войти</a>
-		</div>
-		<div id="login">
-			<div class="login-wrap">
-				<div class="login-wrap-container">
-					<p><input type="text" class="text" name="Логин" value="Логин"></p>
-					<p><input type="text" class="text" name="Пароль" value="Пароль"></p>
-					<p><input  class="button" type="submit" value="Войти" >
-					<a href="#" onclick="document.getElementById('login').style.display='none'; return false;">Отмена</a></p>
-				</div>
+	<div id="login">
+		<div class="login-wrap">
+        <form class="login-wrap-container" action="#">
+				<p><input type="text" class="text" name="Логин" placeholder="Логин"></p>
+				<p><input type="password" class="text" name="Пароль" placeholder="Пароль"></p>
+				<p><input  class="button" type="submit" value="Войти" >
+				<a href="#" onclick="document.getElementById('login').style.display='none'; return false;">Отмена</a></p>
 			</div>
 		</div>
-		<div class="clear"></div>
+	</form>
+
+
+	<header>
+		<div class="clearfix">
+			<div class="h-top logo">
+				lorem ipsum news
+			</div>
+			<div class="h-top log-link">
+				<a href="#" onclick="document.getElementById('login').style.display='block'; return false;" title="Войти">Войти</a>
+			</div>
+		</div>
 		<h1>Новости</h1>
 		<nav>
 			<ul>
@@ -34,11 +37,10 @@
 				<li><a href="#">расследования</a></li>
 			</ul>
 		</nav>
-
 	</header>
 	<div class="wrapper">
-		<article>
-			<div class="article-img  fleft">
+		<article  class="clearfix">
+			<div class="article-img">
 				<img src="img/pic-1.jpg" alt="картинка 1">
 				<div class="abs red">Скандалы</div>
 			</div>
@@ -47,10 +49,9 @@
 				<p>Европейские власти обеспокоены политикой конфиденциальности компании Google. Google хранит личные данные пользователей в одном профиле, в котором может объединяться информация с нескольких десятков разных сайтов.s</p>
 
 			</div>
-			<div class="clear"></div>
 		</article>
-		<article>
-			<div class="article-img  fleft">
+		<article  class="clearfix">
+			<div class="article-img">
 				<img src="img/pic-2.jpg" alt="картинка 2">
 				<div class="abs green">Интриги</div>
 			</div>
@@ -59,10 +60,9 @@
 				<p>Проверка фотографий и видео-записей показала, что на рекламных стендах стадиона "Стэмфорд Бридж" во время указанного матча не были размещены рекламные плакаты данных производителей алкогольной продукции. Рассмотрение данного дела ФАС России назначил на 15 мая 2013 года..</p>
 
 			</div>
-			<div class="clear"></div>
 		</article>
-		<article>	
-				<div class="article-img  fleft">
+		<article class="clearfix">	
+				<div class="article-img">
 				<img src="img/pic-3.jpg" alt="картинка 3">
 				<div class="abs blue">Расследования</div>
 			</div>
@@ -71,7 +71,6 @@
 				<p>По всем 70914 доменным именам поступили заявки от клиентов, желающих их приобрести в указанном порядке", - говорится в тексте судебного решения от 16 ноября 2011 г. Апелляционная инстанция частично удовлетворила иск ФАС, а кассационная передала дело на рассмотрение в президиум ВАС..</p>
 
 			</div>
-			<div class="clear"></div>
 		</article>
 		
 	</div>
