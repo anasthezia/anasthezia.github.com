@@ -5,28 +5,41 @@
     <meta charset="utf-8">
         	<link rel="stylesheet" href="css/normalize.css">
     	<link rel="stylesheet" href="css/style.css">
+         <script>
+         function popUp(){
+document.getElementsByClassName('login')[0].setAttribute('style', 'display:block;');
+document.getElementsByClassName('page')[0].setAttribute('style', '-webkit-filter: blur(3px) contrast(30%);');
+return false;
+}
 
+function popDown(){
+document.getElementsByClassName('login')[0].setAttribute('style', 'display:none;');
+document.getElementsByClassName('page')[0].setAttribute('style', '-webkit-filter: none;');
+return false;
+}
+</script>
 </head>
 <body>
-	<div id="login">
+	<div class="login">
 		<div class="login-wrap">
-        <form class="login-wrap-container" action="#">
+        	<form class="login-wrap-container" action="#">
 				<p><input type="text" class="text" name="Логин" placeholder="Логин"></p>
 				<p><input type="password" class="text" name="Пароль" placeholder="Пароль"></p>
 				<p><input  class="button" type="submit" value="Войти" >
-				<a href="#" onclick="document.getElementById('login').style.display='none'; return false;">Отмена</a></p>
-			</div>
+				<a href="#" onclick="popDown();">Отмена</a></p>
+			</form>	
 		</div>
-	</form>
+	</div>
+	
 
-
+<div class="page">
 	<header>
 		<div class="clearfix">
 			<div class="h-top logo">
 				lorem ipsum news
 			</div>
 			<div class="h-top log-link">
-				<a href="#" onclick="document.getElementById('login').style.display='block'; return false;" title="Войти">Войти</a>
+				<a href="#" onclick="popUp();" title="Войти">Войти</a>
 			</div>
 		</div>
 		<h1>Новости</h1>
@@ -77,6 +90,6 @@
 	<footer>
 		<p>© ЗАО «Лорем ипсум ньюс»</p>
 	</footer>
-
+</div>
 </body>
 </html>
