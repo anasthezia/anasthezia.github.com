@@ -40,13 +40,7 @@
 			font-weight: normal;
 			font-style: italic;
 		}
-.fleft{
-	float: left;
-}
 
-.fright{
-	float: right;
-}
 
 .clearfix:before,
 .clearfix:after {
@@ -77,15 +71,37 @@ h1{
 	text-align: center;
 	margin: 46px 0 0 0;
 }
+
 h2{
+  font: bold 24px 'PTSerif',sans-serif;
+    text-align: left;    
+}
+h2.article-h{
+	margin-left: 198px;
+	margin-bottom: 30px;
+}
+
+h3{
 	margin: 0 0 20px 0;
 	font: 18px PTSans, sans-serif;
 }
+
+h3 a{
+	color:#000;
+}
+h4{
+	font: bold 14px PTSans, sans-serif;	
+	margin: 0;
+}
 a {
-	color: #000;
+	color: #003366;
+}
+
+p{
+	margin-top: 0;
 }
 .h-top {
-	margin: 5px 10px;
+	margin: 10px;
 }
 
 .logo{
@@ -97,48 +113,146 @@ a {
 .log-link{
 	float: right; 
 }
-nav ul {
+.log-link a{
+	color: #000;
+}
+/*menus*/
+.main-menu ul {
 	text-align: center;
 	padding:0;
 	margin: 0;
 }
 
-nav ul li{
+.main-menu ul li{
 	font:18px 'PTSans', sans-serif;	
 	margin: 0;
 	display: inline-block;
 	list-style-type: square;
 }
 
-nav ul li:after{
+.main-menu  ul li:after{
 content: "•";
 margin: 0 3px;
 }
 
-nav ul li:last-child:after{
+.main-menu ul li:last-child:after{
 content: " ";
 margin: 0;
 }
 
-nav a{
+.main-menu a{
 	color:#000;
 	text-decoration: none;
 	cursor: pointer;
 }
+.news-menu{
+	text-align: center;
+}
+.news-menu ul{
+	margin: 10px 0;
+}
+.news-menu li{
+	display: inline-block;
+	list-style: none;
+	margin: 0 12px;
+}
+.news-menu li a{
+	font:14px 'PTSans', sans-serif;	
+	color:#003366;
+}
+.news-menu li a:hover, .news-menu li a.current {
+font-weight: bold;
+color:#000;
+text-decoration: none;
+}
+.user-menu{
+	background: #1e5799; /* Old browsers */
+	background: -moz-linear-gradient(top,  #1e5799 0%, #ffffff 0%, #d9d9d9 100%, #d9d9d9 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#1e5799), color-stop(0%,#ffffff), color-stop(100%,#d9d9d9), color-stop(100%,#d9d9d9)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #1e5799 0%,#ffffff 0%,#d9d9d9 100%,#d9d9d9 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #1e5799 0%,#ffffff 0%,#d9d9d9 100%,#d9d9d9 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #1e5799 0%,#ffffff 0%,#d9d9d9 100%,#d9d9d9 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #1e5799 0%,#ffffff 0%,#d9d9d9 100%,#d9d9d9 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#d9d9d9',GradientType=0 ); /* IE6-9 */
+	overflow: hidden;
+	-webkit-border-radius: 9px;
+	        border-radius: 9px;
+	padding: 3px 10px 3px 20px;
+	cursor: pointer;
+	z-index: 1;
+	top:10px;
+	right: 0;
+	position: absolute;
+	-moz-box-shadow:2px 2px 5px rgba(0, 0, 0, 0.4);
+   	-webkit-box-shadow:2px 2px 5px rgba(0, 0, 0, 0.4);
+  	box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+	color: #666666;
+	text-shadow: 1px 1px 1px #fff;
+	-webkit-transition: display 0.3s ease 1s;
+	   -moz-transition: display 0.3s ease 1s;
+	    -ms-transition: display 0.3s ease 1s;
+	     -o-transition: display 0.3s ease 1s;
+	        transition: display 0.3s ease 1s;
+
+	
+}
+.user-menu p{
+	margin: 0;
+}
+
+.user-menu p:before{
+    background: url("../img/narrow.png") no-repeat scroll 0 0 transparent;
+    content: " ";
+    height: 8px;
+    left: 8px;
+    position: absolute;
+    top: 10px;
+    width: 8px;
+}
+
+.user-menu:hover p:before{
+	background-position: 0 -8px;
+
+}
+.user-menu ul{
+	list-style: none;
+	padding: 0;
+	display: none;
+
+
+}
+.user-menu:hover ul{
+	    	display: block;
+
+}
+.user-menu a{
+	color: #666666;
+}
+
+
+/*-----*/
 .wrapper{
 	width: 800px;
 	margin: 0 auto 115px;
+	
 }
-article{
+
+aside{
+	width: 178px;
+	float: left;
+	font: 10px/1.6 Verdana, sans-serif;
+	color: #666666;
+}
+.news{
 	margin-bottom: 24px;
 }
 
-.article-img{
+.news-img{
 position: relative;
 float: left;
 }
 
-.article-content{
+.news-content{
     float: left;
     margin: 0 0 0 20px;
     position: relative;
@@ -167,10 +281,34 @@ float: left;
 	color: #fff;
 	padding: 6px 10px;
 }
+
+.content{
+	float: left;
+	margin-left: 20px;
+	width:600px;
+}
+.other-news{
+	width: 800px;
+	margin: 0 auto;
+	border-top: 3px solid #b2b2b2;
+	padding-top: 20px;
+	margin-bottom: 30px;
+}
+section{
+	width: 180px;
+	margin-left: 20px;
+	float: left;
+}
+section img{
+	width: 100%;
+}
+section a{
+	font-size: 14px;
+}
 footer{
 	color: #666666;
 	border-top: 1px solid #979797;
-	width: 810px;
+	width: 800px;
 	margin: 0 auto;
 	height: 108px;
 }
