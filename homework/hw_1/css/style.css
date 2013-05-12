@@ -179,6 +179,7 @@ text-decoration: none;
 	        border-radius: 9px;
 	padding: 3px 10px 3px 20px;
 	cursor: pointer;
+	z-index: 1;
 	top:10px;
 	right: 0;
 	position: absolute;
@@ -187,6 +188,11 @@ text-decoration: none;
   	box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
 	color: #666666;
 	text-shadow: 1px 1px 1px #fff;
+	-webkit-transition: display 0.3s ease 1s;
+	   -moz-transition: display 0.3s ease 1s;
+	    -ms-transition: display 0.3s ease 1s;
+	     -o-transition: display 0.3s ease 1s;
+	        transition: display 0.3s ease 1s;
 
 	
 }
@@ -232,7 +238,7 @@ text-decoration: none;
 }
 
 aside{
-	width: 180px;
+	width: 178px;
 	float: left;
 	font: 10px/1.6 Verdana, sans-serif;
 	color: #666666;
@@ -277,48 +283,26 @@ float: left;
 }
 
 .content{
-	float: right;
+	float: left;
 	margin-left: 20px;
 	width:600px;
 }
-
-.sec_main, .sec_bottom{
+.other-news{
 	width: 800px;
 	margin: 0 auto;
-}
-
-.sec_bottom{
 	border-top: 3px solid #b2b2b2;
 	padding-top: 20px;
 	margin-bottom: 30px;
 }
-.sec_bottom h4{
-	color: #666666;
-   	float: left;
-   	width: 180px;
-}
-.other-news{
-	float: left;
-	margin: 0 0 0 20px;
-	padding: 0;
-}
-
-.other-news li {
-	display: block;
-	width: 186px;
- 	margin-right: 20px;
+section{
+	width: 180px;
+	margin-left: 20px;
 	float: left;
 }
-.other-news li:last-child{
-	margin-right: 0;
-}
-
-
-.other-news li img{
+section img{
 	width: 100%;
 }
-
-.other-news li a{
+section a{
 	font-size: 14px;
 }
 footer{
