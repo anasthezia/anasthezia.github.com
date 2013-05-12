@@ -9,6 +9,8 @@
 				font-style: normal;
 		}
 
+
+
 @font-face {
 		font-family: 'PTSans';
 		src: url('../fonts/pts55f.eot');
@@ -20,6 +22,9 @@
 			font-style: normal;
 		}
 		
+
+ 
+  
 @font-face {
 		font-family: 'PTSans';
 		src: url('../fonts/pts75f.eot');
@@ -40,8 +45,18 @@
 			font-weight: normal;
 			font-style: italic;
 		}
+/*---vars---*/
+@blue:#003366;
+@black:#000;
+@gray:#666;
 
-
+/*---mixins---*/
+.rounded-corners (@radius: 5px) {
+  border-radius: @radius;
+  -webkit-border-radius: @radius;
+  -moz-border-radius: @radius;
+}
+/*---*/
 .clearfix:before,
 .clearfix:after {
     content: " ";
@@ -60,10 +75,10 @@
 
 body{
 	background: url(../img/bg_1.jpg) repeat scroll 0 0 transparent;
-	font:14px  'PTSans', sans-serif;
+	font:14px, 'PTSans';
 }
 header{
-	border-top: 3px solid #000;
+	border-top: 3px solid @black;
 	margin-bottom: 122px;
 }
 h1{
@@ -73,8 +88,8 @@ h1{
 }
 
 h2{
-  font: bold 24px 'PTSerif',sans-serif;
-    text-align: left;    
+  	font: bold 24px 'PTSerif',sans-serif;
+    	text-align: left;    
 }
 h2.article-h{
 	margin-left: 198px;
@@ -84,17 +99,17 @@ h2.article-h{
 h3{
 	margin: 0 0 20px 0;
 	font: 18px PTSans, sans-serif;
+	 a{
+		color:@black;
+	}
 }
 
-h3 a{
-	color:#000;
-}
 h4{
 	font: bold 14px PTSans, sans-serif;	
 	margin: 0;
 }
 a {
-	color: #003366;
+	color: @blue;
 }
 
 p{
@@ -112,10 +127,11 @@ p{
 
 .log-link{
 	float: right; 
+	a{
+	color: @black;
+	}
 }
-.log-link a{
-	color: #000;
-}
+
 /*menus*/
 .main-menu ul {
 	text-align: center;
@@ -141,7 +157,7 @@ margin: 0;
 }
 
 .main-menu a{
-	color:#000;
+	color:@black;
 	text-decoration: none;
 	cursor: pointer;
 }
@@ -158,11 +174,11 @@ margin: 0;
 }
 .news-menu li a{
 	font:14px 'PTSans', sans-serif;	
-	color:#003366;
+	color:@blue;
 }
 .news-menu li a:hover, .news-menu li a.current {
 font-weight: bold;
-color:#000;
+color:@black;
 text-decoration: none;
 }
 .user-menu{
@@ -175,8 +191,7 @@ text-decoration: none;
 	background: linear-gradient(to bottom,  #1e5799 0%,#ffffff 0%,#d9d9d9 100%,#d9d9d9 100%); /* W3C */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#d9d9d9',GradientType=0 ); /* IE6-9 */
 	overflow: hidden;
-	-webkit-border-radius: 9px;
-	        border-radius: 9px;
+	.rounded-corners (9px);
 	padding: 3px 10px 3px 20px;
 	cursor: pointer;
 	top:10px;
@@ -185,7 +200,7 @@ text-decoration: none;
 	-moz-box-shadow:2px 2px 5px rgba(0, 0, 0, 0.4);
    	-webkit-box-shadow:2px 2px 5px rgba(0, 0, 0, 0.4);
   	box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
-	color: #666666;
+	color: @gray;
 	text-shadow: 1px 1px 1px #fff;
 
 	
@@ -216,11 +231,11 @@ text-decoration: none;
 
 }
 .user-menu:hover ul{
-	    	display: block;
+	display: block;
 
 }
 .user-menu a{
-	color: #666666;
+	color: @gray;
 }
 
 
@@ -235,7 +250,7 @@ aside{
 	width: 180px;
 	float: left;
 	font: 10px/1.6 Verdana, sans-serif;
-	color: #666666;
+	color: @gray;
 }
 .news{
 	margin-bottom: 24px;
@@ -293,7 +308,7 @@ float: left;
 	margin-bottom: 30px;
 }
 .sec_bottom h4{
-	color: #666666;
+	color: @gray;
    	float: left;
    	width: 180px;
 }
@@ -301,28 +316,26 @@ float: left;
 	float: left;
 	margin: 0 0 0 20px;
 	padding: 0;
+	li {
+		display: block;
+		width: 186px;
+ 		margin-right: 20px;
+		float: left;
+		img{
+			width: 100%;
+		}
+		a{
+			font-size: 14px;
+		}
+
+	}
+	li:last-child{
+		margin-right: 0;
+	}
 }
 
-.other-news li {
-	display: block;
-	width: 186px;
- 	margin-right: 20px;
-	float: left;
-}
-.other-news li:last-child{
-	margin-right: 0;
-}
-
-
-.other-news li img{
-	width: 100%;
-}
-
-.other-news li a{
-	font-size: 14px;
-}
 footer{
-	color: #666666;
+	color: @gray;
 	border-top: 1px solid #979797;
 	width: 800px;
 	margin: 0 auto;
