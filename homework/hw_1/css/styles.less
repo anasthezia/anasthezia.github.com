@@ -1,5 +1,15 @@
+@import "lesshat.less"; 
+
+
+/*---vars---*/
+@blue:#003366;
+@black:#000;
+@gray:#666;
+
+/*--fonts--*/
+    
 @font-face {
-  font-family: 'PTSerif';
+    font-family: 'PTSerif';
     src: url('../fonts/ptf75f.eot');
     src: url('../fonts/ptf75f.eot?#iefix') format('embedded-opentype'),
        url('../fonts/ptf75f.woff') format('woff'),
@@ -45,18 +55,8 @@
       font-weight: normal;
       font-style: italic;
     }
-/*---vars---*/
-@blue:#003366;
-@black:#000;
-@gray:#666;
-
-/*---mixins---*/
-.rounded-corners (@radius: 5px) {
-  border-radius: @radius;
-  -webkit-border-radius: @radius;
-  -moz-border-radius: @radius;
-}
 /*---*/
+
 .clearfix:before,
 .clearfix:after {
     content: " ";
@@ -191,15 +191,13 @@ text-decoration: none;
   background: linear-gradient(to bottom,  #1e5799 0%,#ffffff 0%,#d9d9d9 100%,#d9d9d9 100%); /* W3C */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#d9d9d9',GradientType=0 ); /* IE6-9 */
   overflow: hidden;
-  .rounded-corners (9px);
+  .border-radius(9px);
   padding: 3px 10px 3px 20px;
   cursor: pointer;
   top:10px;
   right: 0;
   position: absolute;
-  -moz-box-shadow:2px 2px 5px rgba(0, 0, 0, 0.4);
-     -webkit-box-shadow:2px 2px 5px rgba(0, 0, 0, 0.4);
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+ .box-shadow(2px 2px 5px rgba(0, 0, 0, 0.4)); 
   color: @gray;
   text-shadow: 1px 1px 1px #fff;
 
@@ -327,11 +325,11 @@ float: left;
     a{
       font-size: 14px;
     }
-
-  }
-  li:last-child{
+     &:last-child{
     margin-right: 0;
   }
+  }
+
 }
 
 footer{
@@ -362,9 +360,7 @@ footer{
       overflow: hidden;
       padding:0px;
   background:#fff;
-  -moz-box-shadow:0 0 40px 5px rgba(0, 0, 0, 0.5);
-     -webkit-box-shadow:0 0 40px 5px rgba(0, 0, 0, 0.5);
-    box-shadow: 0 0 40px 5px rgba(0, 0, 0, 0.5);
+.box-shadow(0 0 40px 5px rgba(0, 0, 0, 0.5)); 
 }
 
 input.text{
