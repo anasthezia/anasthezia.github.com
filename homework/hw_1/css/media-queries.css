@@ -18,14 +18,14 @@ smaller than 640
 	footer{
 		height: 85pxs;
 	}
+
     	.news-menu{
  		 text-align: left;
  		left: 0;
     		top: 36px;
-    		ul{
-    			margin-left: 0;
-    		}
-
+	}
+ 	.news-menu ul{	 
+ 		 margin-left: 0;
 	}
 	.abs {
     	left: 148px;
@@ -62,11 +62,14 @@ smaller than 640
 	.other-news {
    		float: none;
 		margin: 0;
-		 li {
-    			width: 173px;
-    			p{
-    				font-size: 12px;
-    			}
-		}
 	}
-  }
+	
+	.other-news li {
+    		width: 173px;
+    	}
+    	
+    	.other-news li p{
+    			font-size: 12px;
+    	}
+	
+}
