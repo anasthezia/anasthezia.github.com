@@ -436,3 +436,19 @@ input.text{
   color:#666666;
   padding-left: 20px;
 }
+
+.com_error{
+  color: #cc0000;
+   left: -220px;
+    position: absolute;
+}
+.com_error span{
+  background:#cc0000;
+  color: #fff;
+padding: 0 7px;
+border-radius: 15px;
+margin-right: 5px;
+}
+.add_comment{
+  position: relative;
+}

@@ -14,10 +14,9 @@ $(document).ready(function(){
 		 $(".js_send").live("click", thanks);
 
 		 function thanks(event){
+		 	$("div.com_error").remove();
 		 	$(".add_comment")
 			.removeClass("current");
-
-
 		 	$(this)
 		 		.parent()
 		 		.addClass("current");
@@ -40,9 +39,17 @@ $(document).ready(function(){
 	    	 		alert("Благодарим за ваш комментарий! Он будет отображён на этой странице после проверки модератором.");
 	    	 	}
 	    	 	else{
-	    	 		alert("Вы забыли заполнить некоторые поля!")	
-	    	 	};
+	    	 		//alert("Вы забыли заполнить некоторые поля!")
+	    	 		$(this) .after("<div class='com_error'><span>!</span>Вы забыли заполнить некоторые поля</div>");
+	    	 		$(".com_error").animate({"left": "-22px"}, 1000);
+
+	    	 	};	   
 		return false;
 		};
+
+		$('.com_field').live ("focus", function(){
+			$(this).css('background','#fff');
+			$("div.com_error").remove();
+		});
 	  
 });

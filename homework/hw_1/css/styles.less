@@ -425,6 +425,7 @@ input.text{
 .comment, .add_comment{
   padding: 0;
     font: 12px 'PTSans', sans-serif; 
+    position: relative;
 }
  
 
@@ -443,4 +444,17 @@ input.text{
   font-weight: normal;
   color:@gray;
   padding-left: 20px;
+}
+.com_error{
+  color: #cc0000;
+   left: -220px;
+    position: absolute;
+
+    span{
+      background:#cc0000;
+      color: #fff;
+      padding: 0 7px;
+      border-radius: 15px;
+      margin-right: 5px;
+    }
 }
