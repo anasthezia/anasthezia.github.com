@@ -407,6 +407,7 @@ input.text {
   color: #cc0000;
   left: -220px;
   position: absolute;
+  bottom:0;
 }
 .com_error span {
   background: #cc0000;
