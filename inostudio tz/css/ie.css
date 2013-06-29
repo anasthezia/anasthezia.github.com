@@ -1,0 +1,6 @@
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+.main_menu ul li a{
+    font-size: 12px;
+}

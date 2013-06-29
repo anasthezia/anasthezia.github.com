@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Тестовое задание для Inostudio-solutions</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/960_16_10_10.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/fancyselect.css" type="text/css" />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script type="text/javascript" src="js/fancyselect.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('select').fancyselect();
+        });
+    </script>
+
+    <!--[if IE]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <link href="css/ie.css" rel="stylesheet" type="text/css" media="screen" />
+    <![endif]-->
+
+</head>
+<body>
+<header>
+    <div class="h_container_1">
+        <div class="container_16 clearfix">
+        <table class="login">
+            <tr>
+                <td><a href="#"><img src="img/fb_login.jpg" alt=""></a></td>
+                <td><input type="text" class="text" name="usernanme" placeholder="Username"></td>
+                <td><input type="password" class="text" name="password" placeholder="Password"></td>
+                <td>
+                    <input  class="btn btn_green" type="submit" value="Login" >
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td><a href="#" class="link_3">Forgot password?</a></td>
+                <td><a href="#" class="btn btn_orange">Create account</a></td>
+            </tr>
+        </table>
+        </div>
+    </div>
+    <div class="h_container_2">
+        <div class="container_16 clearfix">
+            <div class="grid_16">
+            <div class="h_left">
+                <h1 class="brand">
+                    <a href="#">
+                        <img alt="Black Ink" src="img/logo.png">
+                    </a>
+                </h1>
+            </div>
+            <div class="h_right">
+                <div class="h_phone">Customer support <span>1-651-888-8888</span></div>
+                <nav class="main_menu clearfix">
+                    <ul>
+                        <li class="current"><a href="#">Home</a></li>
+                        <li><a href="#">Salvaged vehicles</a></li>
+                        <li><a href="#">Boats</a></li>
+                        <li><a href="#">Motorcycles</a></li>
+                        <li><a href="#">Jet skis</a></li>
+                        <li><a href="#">Tons parts</a></li>
+                        <li><a href="#">Buyer faq</a></li>
+                        <li><a href="#">Seller faq</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+    </div>
+</header>
+
+<section class="container">
+    <div class="container_16 clearfix">
+        <div class="c_sum">Currently listing 102,234 cars</div>
+        <aside class="grid_3 left_side">
+            <p class="l_title">I’m looking for a...</p>
+            <section class="l_filter">
+            <form action="" method="post">
+                <p class="sel_1"><select size="1" name="type[]">
+                    <option selected="selected">Car, truck, boat etc...</option>
+                    <option value="Item 1">Item 1</option>
+                    <option value="Item 2">Item 2</option>
+                    <option value="Item 3">Item 3</option>
+                    <option value="Item 4">Item 4</option>
+                </select></p>
+                <p class="sel_2"><select name="make[]">
+                <option selected="selected">Make</option>
+                <option value="Item 1">Item 1</option>
+                <option value="Item 2">Item 2</option>
+                <option value="Item 3">Item 3</option>
+                <option value="Item 4">Item 4</option>
+            </select></p>
+                <p class="sel_2"><select  size="1" name="model[]">
+                    <option selected="selected">Model</option>
+                    <option value="Item 1">Item 1</option>
+                    <option value="Item 2">Item 2</option>
+                    <option value="Item 3">Item 3</option>
+                    <option value="Item 4">Item 4</option>
+                </select></p>
+                <p class="sel_2"><select  size="1" name="year[]">
+                    <option selected="selected">Year</option>
+                    <option value="Item 1">Item 1</option>
+                    <option value="Item 2">Item 2</option>
+                    <option value="Item 3">Item 3</option>
+                    <option value="Item 4">Item 4</option>
+                </select></p>
+                <p class="sel_2"><select  size="1" name="status[]">
+                    <option selected="selected">Title status</option>
+                    <option value="Item 1">Item 1</option>
+                    <option value="Item 2">Item 2</option>
+                    <option value="Item 3">Item 3</option>
+                    <option value="Item 4">Item 4</option>
+                </select></p>
+                <p><input type="submit" class="btn btn_orange" value="Search"></p>
+            </form>
+            </section>
+            <section class="l_filter">
+                <p class="l_title">Search by location</p>
+                <form action="" method="post">
+                    <p> <input placeholder="Enter Zip Code" name="zip" type="text"></p>
+                    <p class="sel_3 clearfix"><span class=sel_text>Radius within</span>
+                        <select size="1" name="myles[]">
+                        <option selected="selected">Myles</option>
+                        <option value="Item 1">Item 1</option>
+                        <option value="Item 2">Item 2</option>
+                        <option value="Item 3">Item 3</option>
+                        <option value="Item 4">Item 4</option>
+                    </select></p>
+                    <p><input type="submit" class="btn btn_orange" value="Search"></p>
+                </form>
+            </section>
+            <section class="link_block">
+                <a class="l_link link_1" href="#"><img src="img/link_pic_1.png" alt="">Find a transporter</a>
+                <a class="l_link link_1" href="#"><img src="img/link_pic_2.png" alt="">Need financer</a>
+            </section>
+            <footer class="l_foot">
+                <ul class="soc_group clearfix">
+                    <li><a href="#"><img src="img/soc_icon_1.png" alt=""></a></li>
+                    <li><a href="#"><img src="img/soc_icon_2.png" alt=""></a></li>
+                    <li><a href="#"><img src="img/soc_icon_3.png" alt=""></a></li>
+                </ul>
+            </footer>
+        </aside>
+        <div class="grid_13">
+            <div class="c_top_bar">
+                <div class="bar_1">
+                    <img src="img/pic-girl.png" alt="pic-girl">
+                    <a class="btn bar_btn" href="#"><p class="b_big"> START NOW!</p><p class="b_small">Create a free account to BUY or SELL</p></a>
+                </div>
+                <div class="bar_2">
+                    <p class="b_title">How it works and why it’s better</p>
+                    <video width="258" height="164" controls>
+                        <iframe width="258" height="164" src="//www.youtube.com/embed/pwiaIDEtr00" frameborder="0" allowfullscreen></iframe>
+                   </video>
+                </div>
+            </div>
+            <div class="submit_block clearfix">
+                <p><span>Custom Email Alerts</span>    Enter your email here and set up your own custom alert.</p>
+                <form method="post" action="">
+                    <input placeholder="Email adress" name="email" type="text">
+                    <input type="submit" value="submit" class="btn btn_orange">
+                </form>
+            </div>
+            <h2>New arrivels</h2>
+            <ul class="c_articles_list">
+                <li class="c_item clearfix">
+                    <h3>2005 Ford Explorer XLE</h3>
+                    <article class="c_item_wrap">
+                        <div class=" grid_3 c_item_img">
+                             <img src="img/car-img-1.jpg">
+                        </div>
+                        <div class="grid_2 c_item_details">
+                            <p><strong>Title:</strong> Marked</p>
+                            <p><strong>Make:</strong> Ford</p>
+                            <p><strong>Model:</strong> Explorer</p>
+                            <p><strong>Year:</strong> 2005</p>
+                        </div>
+                        <div class="grid_6 c_item_introtext">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam se nulla a nunc pretium ut congue nunc imperdiet. Nulla et mi sit amet libero tempor faucibus ac id quam. Aliquam sollicitudin facilisis posuere. Cras tempor imperdiet.
+                            </p>
+                            <a href="#" class="c_readmore">read more</a>
+                        </div>
+                    </article>
+                    <div class="grid_2 c_shop_block">
+                    <p class="price">$650</p>
+                    <p>123,000 miles</p>
+                        <a href="#" class="btn btn_green btn_show">Show me<br/>the carfax</a>
+                    </div>
+                </li>
+                <li class="c_item clearfix">
+                    <h3>2005 Ford Explorer XLE</h3>
+                    <article class="c_item_wrap">
+                        <div class=" grid_3 c_item_img">
+                            <img src="img/car-img-1.jpg">
+                        </div>
+                        <div class="grid_2 c_item_details">
+                            <p><strong>Title:</strong> Marked</p>
+                            <p><strong>Make:</strong> Ford</p>
+                            <p><strong>Model:</strong> Explorer</p>
+                            <p><strong>Year:</strong> 2005</p>
+                        </div>
+                        <div class="grid_6 c_item_introtext">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam se nulla a nunc pretium ut congue nunc imperdiet. Nulla et mi sit amet libero tempor faucibus ac id quam. Aliquam sollicitudin facilisis posuere. Cras tempor imperdiet.
+                            </p>
+                            <a href="#" class="c_readmore">read more</a>
+                        </div>
+                    </article>
+                    <div class="grid_2 c_shop_block">
+                        <p class="price">$650</p>
+                        <p>123,000 miles</p>
+                        <a href="#" class="btn btn_green btn_show">Show me<br/>the carfax</a>
+                    </div>
+                </li>
+                <li class="c_item clearfix">
+                    <h3>2005 Ford Explorer XLE</h3>
+                    <article class="c_item_wrap">
+                        <div class=" grid_3 c_item_img">
+                            <img src="img/car-img-1.jpg">
+                        </div>
+                        <div class="grid_2 c_item_details">
+                            <p><strong>Title:</strong> Marked</p>
+                            <p><strong>Make:</strong> Ford</p>
+                            <p><strong>Model:</strong> Explorer</p>
+                            <p><strong>Year:</strong> 2005</p>
+                        </div>
+                        <div class="grid_6 c_item_introtext">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam se nulla a nunc pretium ut congue nunc imperdiet. Nulla et mi sit amet libero tempor faucibus ac id quam. Aliquam sollicitudin facilisis posuere. Cras tempor imperdiet.
+                            </p>
+                            <a href="#" class="c_readmore">read more</a>
+                        </div>
+                    </article>
+                    <div class="grid_2 c_shop_block">
+                        <p class="price">$650</p>
+                        <p>123,000 miles</p>
+                        <a href="#" class="btn btn_green btn_show">Show me<br/>the carfax</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+<footer class="footer">
+    <div class="container_16 clearfix">
+        <div class="grid_2 f_logo"><img src="img/small_logo.png" alt="">
+        </div>
+        <div class="grid_12 f_center">
+        <ul class="f_menu clearfix">
+            <li><a href="#" class="link_2">Terms of Use</a></li>
+            <li><a href="#" class="link_2"> Privacy Policy</a></li>
+            <li><a href="#" class="link_2">About Us</a></li>
+            <li><a href="#" class="link_2">Contact Us</a></li>
+            <li><a href="#" class="link_2">Need Financing</a></li>
+            <li><a href="#" class="link_2">Find a Transporter</a></li>
+        </ul>
+        <p>© Copyright 2011 Site.com</p>
+        </div>
+        <div class="grid_2 f_soc">
+            <ul class="soc_group clearfix">
+                <li><a href="#"><img src="img/soc_icon_1.png" alt=""></a></li>
+                <li><a href="#"><img src="img/soc_icon_2.png" alt=""></a></li>
+                <li><a href="#"><img src="img/soc_icon_3.png" alt=""></a></li>
+            </ul>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
