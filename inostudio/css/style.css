@@ -186,8 +186,12 @@ p{
     float:right;
     margin:6px 20px 0 0;
 }
-.login td{
-    padding: 0 0 0 8px;
+.login div{
+    float: left;
+    margin: 0 0 0 8px;
+}
+.login p{
+    margin: 4px 0;
 }
 .h_left{
     float: left;
