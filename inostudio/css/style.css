@@ -82,9 +82,10 @@ h3{
     font-size: 15px;
     margin: 6px 0;
 }
-.l_title{
+h4{
     font-size: 15px;
-    margin-bottom: 12px;
+    font-weight: normal;
+    margin:0 0 12px;
 }
 p{
     margin: 0;
@@ -120,13 +121,13 @@ p{
     -moz-box-shadow: none;
 }
 .btn_green{
-    background: url("../img/btn_green_bg.jpg") no-repeat center center #75aa42;
+    background: url("../img/btn_green_bg.png") no-repeat center center #75aa42;
 }
 .btn_green:hover{
     background: #75aa42;
 }
 .btn_orange{
-    background: url("../img/btn_orange_bg.jpg") no-repeat center center #f76d00;
+    background: url("../img/btn_orange_bg.png") no-repeat center center #f76d00;
 }
 .btn_orange:hover{
     background: #f76e00
@@ -149,6 +150,14 @@ p{
 }
 .link_3:hover{
     color: #d0d0d0;
+    text-decoration: underline;
+}
+.link_4{
+    color:#f76e00;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+.link_4:hover{
     text-decoration: underline;
 }
 .price{
@@ -201,8 +210,11 @@ p{
     text-align: right;
     margin-top: 20px;
 }
-.h_phone span{
+.h_phone a{
     font-size: 25px;
+    cursor: text;
+    color:#C4C4C4;
+    text-decoration:none;
 }
 .main_menu{
     margin: 10px 0 14px;
@@ -228,7 +240,7 @@ p{
     height: 44px;
 }
 .main_menu ul li:after{
-    background: url("../img/m_li_bg.jpg") no-repeat scroll 0 0 transparent;
+    background: url("../img/m_li_bg.png") no-repeat scroll 0 0 transparent;
     content: "";
     height: 44px;
     position: absolute;
@@ -309,6 +321,15 @@ p{
 .link_block a+a{
     margin-top: 12px;
 }
+.link_transp, .link_fin{
+    padding-left:30px;}
+
+.link_transp{
+    background: url("../img/link_pic_1.png") no-repeat scroll 0 0 transparent;
+ }
+.link_fin{
+    background: url("../img/link_pic_2.png") no-repeat scroll 0 0 transparent;
+}
 .container{
     background: url("../img/top_border.png") no-repeat top center transparent;
     padding-top: 17px;
@@ -341,9 +362,8 @@ p{
     text-align: right;
     margin: 7px 15px;
 }
-.b_title{
+.bar_2 h4{
     font: bold 18px 'PTSans', sans-serif;
-    color: #626262;
     margin: 10px 0;
 }
 .c_top_bar{
@@ -374,11 +394,11 @@ p{
     width: 258px;
 }
 .c_top_bar a.bar_btn{
-    background: url("../img/btn_orange_big_bg.jpg") no-repeat scroll center center #F76E00;
+    background: url("../img/btn_orange_big_bg.png") no-repeat scroll center center #F76E00;
     border-radius: 20px;
     -webkit-border-radius: 20px;
      -moz-border-radius:20px;
-    bottom: 20px;
+    bottom: 16px;
     display: block;
     padding: 3px 0;
     position: absolute;
@@ -390,14 +410,17 @@ p{
     background: #F76E00;
 }
 
-.c_top_bar a.bar_btn .b_big{
+
+.c_top_bar a.bar_btn {
+    text-transform: none;
+    font-size: 12px;
+    line-height:17px;
+}
+.c_top_bar a.bar_btn  span{
     font-size: 34px;
     line-height: 34px;
 }
-.c_top_bar a.bar_btn .b_small{
-    text-transform: none;
-    font-size: 12px;
-}
+
 .c_articles_list{
     margin: 0;
     padding: 0;
@@ -428,6 +451,18 @@ p{
     margin-left: 0;
     margin-right: 20px;
 }
+.c_item_details dt, .c_item_details dd{
+line-height: 20px;
+display:inline;
+}
+.c_item_details dt{
+    font-weight: bold;
+
+}
+.c_item_details dd{
+    margin-left:5px;
+}
+
 .c_item_details p{
     margin-bottom: 4px;
 }
@@ -438,16 +473,6 @@ p{
 .c_shop_block .btn_green{
     margin: 10px 0 0 0;
 }
-.c_readmore{
-    color:#f76e00;
-    text-transform: uppercase;
-    text-decoration: none;
-}
-.c_readmore:hover{
-    font-weight: bold;
-    text-decoration: underline;
-}
-
 .footer{
     background: #f8f8f8;
     position: relative;
@@ -468,7 +493,7 @@ p{
     padding: 30px 0;
 }
 .f_center ul, .f_center p{
-    margin-left: 10px;.
+    margin-left: 10px;
 }
 .f_menu{
 list-style:none;
@@ -506,4 +531,21 @@ list-style:none;
 
 .soc_group li:first-child{
     margin-left: 0;
+}
+.soc_group li a{
+background: url("../img/soc_icons.png") no-repeat scroll 0 0 transparent;
+display: inline;
+float: left;
+height: 26px;
+width: 26px;
+}
+
+.soc_group li a.fb{
+    background-position:0 0;
+}
+.soc_group li a.in{
+    background-position: -32px 0;
+}
+.soc_group li a.tw{
+    background-position: -64px 0;
 }
