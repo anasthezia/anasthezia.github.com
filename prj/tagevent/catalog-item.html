@@ -1,0 +1,424 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<title>Tagevent</title>
+<meta charset="utf-8">
+<link rel="icon" href="img/favicon.ico" type="image/x-icon">
+<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon"/>
+    <meta name="description" content="Your description">
+    <meta name="keywords" content="Your keywords">
+    <meta name="author" content="Your name">
+<link rel="stylesheet" href="css/bootstrap.css">
+<link rel="stylesheet" href="css/responsive.css">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/style-1.css">
+<link rel="stylesheet" href="css/camera.css">
+
+
+<link rel="stylesheet" href="css/touchTouch.css">
+<script src="js/jquery-1.8.3.min.js"></script>
+<script src="js/jquery.easing.1.3.js"></script>
+<script src="js/jquery-migrate-1.1.1.js"></script>
+<script src="js/superfish.js"></script>
+<script src="js/jquery.mobilemenu.js"></script>
+<script src="js/jquery.cookie.js"></script>
+<script src="js/camera.js"></script>
+<!--[if (gt IE 9)|!(IE)]><!-->
+<script src="js/jquery.mobile.customized.min.js"></script>
+<!--<![endif]-->
+<script src="js/jquery.equalheights.js"></script>
+<script src="js/touchTouch.jquery.js"></script>
+<script src="js/jquery.carouFredSel-6.1.0-packed.js"></script>
+<script src="js/jquery.mousewheel.min.js"></script>
+<script src="js/jquery.touchSwipe.min.js"></script>
+<script src="js/sForm.js"></script>
+
+
+    <!-- bxSlider Javascript file -->
+    <script src="js/jquery.bxslider.js"></script>
+    <!-- bxSlider CSS file -->
+    <link href="css/jquery.bxslider.css" rel="stylesheet" />
+
+
+        <!-- Add fancyBox main JS and CSS files -->
+    <script type="text/javascript" src="js/jquery.fancybox.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/jquery.fancybox.css" media="screen" />
+    <script type="text/javascript">
+        $(document).ready(function() {
+            /*
+             *  Simple image gallery. Uses default settings
+             */
+
+            $('.fancybox').fancybox();
+
+
+
+        });
+    </script>
+
+
+        <script>
+            $(document).ready(function() {
+                jQuery('.camera_wrap').camera();
+                $('.magnifier').touchTouch();
+            });
+        </script>
+        <script>
+            $(function() {
+                $('#foo').carouFredSel({
+                    auto: false,
+                    responsive: true,
+                    width: '100%',
+                    prev: '#prev',
+                    next: '#next',
+                    scroll: 1,
+                    items: {
+                        height: 'auto',
+                        width: 320,
+                        visible: {
+                            min: 1,
+                            max: 2
+                        }
+                    },
+                    mousewheel: true,
+                    swipe: {
+                        onMouse: true,
+                        onTouch: true
+                    }
+                });
+            });
+        </script>    
+
+<!--[if lt IE 8]>
+        <div style='text-align:center'><a href="http://www.microsoft.com/windows/internet-explorer/default.aspx?ocid=ie6_countdown_bannercode"><img src="http://www.theie6countdown.com/img/upgrade.jpg"border="0"alt=""/></a></div>  
+    <![endif]-->
+<!--[if lt IE 9]>
+    <link rel="stylesheet" href="css/docs.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="css/ie.css" type="text/css" media="screen">
+    <script src="assets/js/html5shiv.js"></script>
+  <![endif]-->
+</head>
+<body>
+<header>
+<div>
+<div class="container">
+<div class="row">
+<div class="span12 clearfix  pos-relative">
+<h1 class="brand"><a href="index.html"><img src="img/logo-1.png" alt="Black Ink"></a></h1>
+</div>
+</div>
+<div class="row">
+<div class="span12 clearfix">
+<div class="navbar navbar_ clearfix">
+<div class="navbar-inner">
+<div class="nav-collapse nav-collapse_ collapse">
+<ul class="nav sf-menu clearfix">
+<li><a href="index-1.html">Новости</a></li>
+<li class="sub-menu"><a href="index-2.html">Полезные статьи</a><em></em>
+<ul>
+<li><a href="#">Свадьба в Таганроге</a></li>
+<li><a href="#">Детские праздники</a></li>
+<li><a href="#">Копилка праздничных услуг</a></li>
+<li><a href="#">Что подарить</a></li>
+</ul>
+</li>
+<li class="sub-menu"><a href="index-4.html">Каталог</a><em></em>
+<ul>
+<li class="sub-menu"><a href="#">Где провести праздник?</a>
+<ul>
+<li><a href="#">Кафе</a></li>
+<li><a href="#">Рестораны</a></li>
+<li><a href="#">Банкетные залы</a></li>
+<li><a href="#">Кафе за городом</a></li>
+<li><a href="#">Базы отдыха</a></li>
+</ul>
+</li>
+<li class="sub-menu"><a href="#">Кто проведёт праздник?</a>
+<ul>
+<li><a href="#">Ведущие, тамада</a></li>
+<li><a href="#">Танцевальные коллективы</a></li>
+<li><a href="#">Музыка</a></li>
+<li><a href="#">Фокусы</a></li>
+<li><a href="#">Оригинальный жанр</a></li>
+<li><a href="#">Баянн, аккардеон</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="index-5.html">Отзывы</a><em></em></li>
+<li><a href="index-5.html">Контакты</a><em></em></li>
+</ul>
+</div>
+</div>
+<ul class="soc-icons">
+<li>  <form>
+    <div class="search">
+     <input type="search" class="search-field" name="">
+     <input type="submit" class="search-btn" value="">
+   </div>
+  </form></li>
+<li><a href="#" class="calc-btn"></a></li>
+<li><a href="#" class="call-btn"></a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</header>
+ 
+<div id="content">
+<div class="container">
+<div class="row">
+<div class="span8">
+<h3>Ведущая Ковтунова Елена</h3>
+
+<div class="extra-wrap cat_contacts">
+тел.: 8-950-850-73-19 
+</div>
+«Перемен требуют наши сердца… Мы ждём перемен!» И они будут! Долой скучные праздники с тягомотными стихами и маршами Мендельсона. Давайте всё перевернём с ног на голову!
+Готовы?!  Тогда я жду самых креативных молодожёнов, которые готовы к нестандартным решениям.  Поверьте, даже самые популярные свадебные традиции можно преподнести  по-другому и я точно знаю, как это сделать! Например: вместо традиционного зажжения семейного очага - песочная церемония на мостике влюбленных или вместо уже поднадоевших свечей в конце свадьбы - цветок семейного счастья.
+
+Выбор за Вами! А то, что Ваша свадьба будет нестандартно оригинальной - я гарантирую!
+<ul class="gallery">
+<li class="span2">
+<figure class="img-polaroid"><a class="magnifier" href="img/ci/ci-pic-1.jpg" ><img alt="" src="img/ci/small/ci-pic-1.jpg"></a></figure>
+</li>
+<li class="span2">
+<figure class="img-polaroid"><a class="magnifier" href="img/ci/ci-pic-2.jpg"><img alt="" src="img/ci/small/ci-pic-2.jpg"></a></figure>
+</li>
+<li class="span2">
+<figure class="img-polaroid"><a class="magnifierф" href="img/ci/ci-pic-3.jpg"><img alt="" src="img/ci/small/ci-pic-3.jpg"></a></figure>
+</li>
+<li class="span2">
+<figure class="img-polaroid"><a class="magnifier" href="img/ci/ci-pic-4.jpg"><img alt="" src="img/ci/small/ci-pic-4.jpg"></a></figure>
+</li>
+<li class="span2">
+<figure class="img-polaroid"><a class="magnifier" href="img/ci/ci-pic-5.jpg"><img alt="" src="img/ci/small/ci-pic-5.jpg"></a></figure>
+</li>
+<li class="span2">
+<figure class="img-polaroid"><a class="magnifier" href="img/ci/ci-pic-6.jpg"><img alt="" src="img/ci/small/ci-pic-6.jpg"></a></figure>
+</li>
+<li class="span2">
+<figure class="img-polaroid"><a class="magnifier" href="img/ci/ci-pic-5.jpg" ><img alt="" src="img/ci/small/ci-pic-5.jpg"></a></figure>
+</li>
+<li class="span2">
+<figure class="img-polaroid"><a class="magnifier" href="img/ci/ci-pic-6.jpg"><img alt="" src="img/ci/small/ci-pic-6.jpg"></a></figure>
+</li>
+</ul>
+</div>
+<div class="span4">
+<h3>Справочник</h3>
+<ul class="list">
+<li><a href="#">Где провести праздник?</a></li>
+<li><a href="#">Кто проведёт праздник?</a></li>
+<li><a href="#">Свадебные и вечерние наряды</a></li>
+<li><a href="#">Причёска, макияж, маникюр</a></li>
+<li><a href="#">Украшение праздников</a></li>
+<li><a href="#">Авто для праздника</a></li>
+<li><a href="#">Пиротехника, спецэффекты</a></li>
+<li><a href="#">Кондитерские изделия</a></li>
+<li><a href="#">Костюмы, реквизит</a></li>
+<li><a href="#">Бани, сауны</a></li>
+<li><a href="#">Туристические агентства</a></li>
+<li><a href="#">Организаторы праздников</a></li>
+</ul>
+</div>
+</div>
+
+
+
+
+
+<div class="row">
+<div class="span6">
+<h3 class="indent-2">Свадьба в Таганроге</h3>
+<div class="block-1">
+<h4 class="pink-h"><a href="#" >Какой год? Какая свадьба?</a></h4>
+Все мы знаем, когда празднуется серебряная и золотая свадьбы, а какие свадьбы еще бывают? Мы подобрали для Вас годовщины всех свадеб. <br>
+<a href="#" class="btn-readmore">читать дальше</a>
+</div>
+<br>
+<div class="block-1">
+<h4 class="pink-h"><a href="#" >Тематические свадьбы</a></h4>
+Что же делать тем, у кого нет возможности улететь  на Гавайи или арендовать воздушный шар? Здесь как всегда на выручку приходит фантазия! <br>
+<a href="#" class="btn-readmore">читать дальше</a>
+</div>
+<br>
+<div class="block-1">
+<h4 class="pink-h"><a href="#" >Выездная церемония регистрации</a></h4>
+Итак, Вы  приняли решение о проведении выездной церемонии регистрации. Осталось только выбрать ГДЕ ПРОВЕСТИ и КТО ПРОВЕДЕТ?
+<br>
+<a href="#" class="btn-readmore">читать дальше</a>
+</div>
+<br>
+<div class="block-1">
+<h4 class="pink-h"><a href="#" >Постановка свадебного танца</a></h4>
+Первый танец молодых не только важный, если не сказать ключевой обряд Вашей свадьбы, но и самый трогательный момент свадьбы! 
+<br>
+<a href="#" class="btn-readmore">читать дальше</a>
+</div>
+<br>
+<div class="block-1">
+<h4 class="pink-h"><a href="#" >Оригинальное для свадьбы</a></h4>
+чем удивить гостей на свадьбе?
+<br>
+<a href="#" class="btn-readmore">читать дальше</a>
+</div>
+<br>
+<div class="block-1">
+<h4 class="pink-h"><a href="#" >Необычная фотосессия</a></h4>
+Где провести свадебную фотосессию? Конечно в самом интересном  и необычном месте!
+<br>
+<a href="#" class="btn-readmore">читать дальше</a>
+</div>
+<br>
+<div class="block-1">
+<h4 class="pink-h"><a href="#" >Необычная фотосессия</a></h4>
+Где провести свадебную фотосессию? Конечно в самом интересном  и необычном месте!
+<br>
+<a href="#" class="btn-readmore">читать дальше</a>
+</div>
+<br>
+
+</div>
+
+           <div class="span6">
+                <h3 class="indent-2">Сопутствующие услуги</h3>
+                <div class="list_carousel responsive clearfix">
+                  <ul id="foo">
+                    <li>
+                        <div>
+                            <figure class="img-polaroid"><img alt="" src="img/cat/cat-1.jpg"></figure>
+                            <div class="caption">
+                                <a class="lead" href="#">Где провести праздник</a><br>
+                                Рестораны, кафе, банкетные залы 
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <figure class="img-polaroid"><img alt="" src="img/cat/cat-2.jpg"></figure>
+                            <div class="caption">
+                                <a class="lead" href="#">Причёска, макияж, маникюр</a><br>
+                                Парикмахеры, визажисты, салоны красоты 
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <figure class="img-polaroid"><img alt="" src="img/cat/cat-3.jpg"></figure>
+                            <div class="caption">
+                            <a class="lead" href="#">Авто для праздника</a><br>
+                                Автомодили, кортежи, автобусы 
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <figure class="img-polaroid"><img alt="" src="img/cat/cat-4.jpg"></figure>
+                            <div class="caption">
+                                <a class="lead" href="#">Пиротехника и спецэффекты</a><br>
+                                Фейеврерки, салюты, мыльные пузыри и другие спецэффекты
+                            </div>
+                        </div>
+                    </li>
+                  </ul>
+                  <a id="prev" class="prev" href="#"></a>
+                  <a id="next" class="next" href="#"></a>
+              </div>
+            </div>    
+<div class="span6">
+<div class="child-block clearfix">
+<h3>Детские праздники</h3>
+<img src="img/children-1.png">
+<ul class="list">
+<li><a href="#">Где провести праздник?</a></li>
+<li><a href="#">Кто проведёт праздник?</a></li>
+<li><a href="#">Афиша детских праздников</a></li>
+<li><a href="#">Детские наряды</a></li>
+<li><a href="#">Эксклюзив на детский праздник</a></li>
+</ul>
+</div>
+<!--
+<div class="span4">-->
+<h3>Что подарить</h3>
+<ul class="list-staff gift-list">
+<li class="span2">
+    <figure class="img-polaroid">
+        <a class="gift-item" href="img/gifts/gift-1-big.jpg">
+            <img alt="" src="img/gifts/gift-1.jpg">
+            <div class="gift-caption">Магический шар</div>
+        </a>
+    </figure>
+</li>
+<li class="span2">
+    <figure class="img-polaroid">
+        <a class="gift-item" href="img/gifts/gift-1-big.jpg">
+            <img alt="" src="img/gifts/gift-2.jpg">
+            <div class="gift-caption">В воздушном шаре</div>  
+        </a>
+    </figure>
+</li>
+<li class="span2">
+    <figure class="img-polaroid">
+        <a class="gift-item" href="img/gifts/gift-1-big.jpg">
+            <img alt="" src="img/gifts/gift-3.jpg">
+            <div class="gift-caption">Букет из конфет</div>
+        </a>
+    </figure>
+</li>
+<li class="span2">
+    <figure class="img-polaroid">
+        <a class="gift-item" href="img/gifts/gift-1-big.jpg">
+            <img alt="" src="img/gifts/gift-4.jpg">
+            <div class="gift-caption">Из воздушных шаров</div>
+        </a>
+    </figure>
+</li>
+<li class="span2">
+    <figure class="img-polaroid">
+        <a class="gift-item" href="img/gifts/gift-1-big.jpg">
+            <img alt="" src="img/gifts/gift-5.jpg">
+            <div class="gift-caption">торт из памперсов</div>
+           </a>
+    </figure>
+</li>
+<li class="span2">
+    <figure class="img-polaroid">
+        <a class="gift-item" href="img/gifts/gift-1-big.jpg">
+            <img alt="" src="img/gifts/gift-6.jpg">
+            <div class="gift-caption">Цветы в вазе</div>
+        </a>
+    </figure>
+</li>
+</ul>
+</div>
+</div>
+
+
+
+</div>
+</div>
+ 
+<footer>
+<div class="container">
+<div class="row">
+<div class="span12 center">
+    <ul class="footer-menu">
+        <li><a href="#">Свадьба в Таганроге</a></li>
+        <li><a href="#">Кафе Таганрога</a></li>
+        <li><a href="#">Фото на свадьбу</a></li>
+        <li><a href="#">Тамада на свадьбу</a></li>
+        <li><a href="#">Свадебные причёски</a></li>
+        <li><a href="#">Свадебные платья</a></li>
+        <li><a href="#">Салоны красоты</a></li>
+    </ul>
+</div>
+</div>
+</div>
+</footer>
+<script src="js/bootstrap.js"></script>
+</body>
+</html>
