@@ -1,8 +1,7 @@
-
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-<title>Tagevent</title>
+<title>te_cat-3</title>
 <meta charset="utf-8">
 <link rel="icon" href="img/favicon.ico" type="image/x-icon">
 <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon"/>
@@ -40,25 +39,37 @@
     <!-- bxSlider CSS file -->
     <link href="css/jquery.bxslider.css" rel="stylesheet" />
 
-
-        <!-- Add fancyBox main JS and CSS files -->
-    <script type="text/javascript" src="js/jquery.fancybox.js"></script>
-    <link rel="stylesheet" type="text/css" href="css/jquery.fancybox.css" media="screen" />
-    <script type="text/javascript">
-        $(document).ready(function() {
-            /*
-             *  Simple image gallery. Uses default settings
-             */
-
-            $('.fancybox').fancybox();
-
-
-
-        });
-    </script>
-
-
-
+        <script>
+            $(document).ready(function() {
+                jQuery('.camera_wrap').camera();
+                $('.magnifier').touchTouch();
+            });
+        </script>
+        <script>
+            $(function() {
+                $('#foo').carouFredSel({
+                    auto: false,
+                    responsive: true,
+                    width: '100%',
+                    prev: '#prev',
+                    next: '#next',
+                    scroll: 1,
+                    items: {
+                        height: 'auto',
+                        width: 320,
+                        visible: {
+                            min: 1,
+                            max: 2
+                        }
+                    },
+                    mousewheel: true,
+                    swipe: {
+                        onMouse: true,
+                        onTouch: true
+                    }
+                });
+            });
+        </script>    
 
 <!--[if lt IE 8]>
         <div style='text-align:center'><a href="http://www.microsoft.com/windows/internet-explorer/default.aspx?ocid=ie6_countdown_bannercode"><img src="http://www.theie6countdown.com/img/upgrade.jpg"border="0"alt=""/></a></div>  
@@ -71,8 +82,7 @@
 </head>
 <body>
 <header>
-<div>
-<div class="container">
+<div class="container h_container">
 <div class="row">
 <div class="span12 clearfix  pos-relative">
 <h1 class="brand"><a href="index.html"><img src="img/logo-1.png" alt="Black Ink"></a></h1>
@@ -95,25 +105,18 @@
 </li>
 <li class="sub-menu"><a href="index-4.html">Каталог</a><em></em>
 <ul>
-<li class="sub-menu"><a href="#">Где провести праздник?</a>
-<ul>
-<li><a href="#">Кафе</a></li>
-<li><a href="#">Рестораны</a></li>
-<li><a href="#">Банкетные залы</a></li>
-<li><a href="#">Кафе за городом</a></li>
-<li><a href="#">Базы отдыха</a></li>
-</ul>
-</li>
-<li class="sub-menu"><a href="#">Кто проведёт праздник?</a>
-<ul>
-<li><a href="#">Ведущие, тамада</a></li>
-<li><a href="#">Танцевальные коллективы</a></li>
-<li><a href="#">Музыка</a></li>
-<li><a href="#">Фокусы</a></li>
-<li><a href="#">Оригинальный жанр</a></li>
-<li><a href="#">Баянн, аккардеон</a></li>
-</ul>
-</li>
+<li><a href="#">Где провести праздник?</a></li>
+<li><a href="#">Кто проведёт праздник?</a></li>
+<li><a href="#">Свадебные и вечерние наряды</a></li>
+<li><a href="#">Причёска, макияж, маникюр</a></li>
+<li><a href="#">Украшение праздников</a></li>
+<li><a href="#">Авто для праздника</a></li>
+<li><a href="#">Фото, видео</a></li>
+<li><a href="#">Пиротехника, спецэффекты</a></li>
+<li><a href="#">Кондитерские изделия</a></li>
+<li><a href="#">Костюмы, реквизит</a></li>
+<li><a href="#">Альтернативный отдых</a></li>
+<li><a href="#">Организаторы праздников</a></li>
 </ul>
 </li>
 <li><a href="index-5.html">Отзывы</a><em></em></li>
@@ -135,105 +138,52 @@
 </div>
 </div>
 </div>
-</div>
 </header>
  
 <div id="content">
 <div class="container">
 <div class="row">
 <div class="span8">
-<h3>Ведущие, тамада</h3>
-<ul class="cat_item-list">
-<li class="span4 clearfix">
-<figure class="img-polaroid"><img alt="" src="img/tamada/tamada1.jpg"></figure>
-<div class="extra-wrap cat_item-wrap">
-<a class="lead" href="#">Любовь Христич</a><br>
-8-950-850-73-19 
+<h3>Ведущая Ковтунова Елена</h3>
+
+<div class="extra-wrap cat_contacts">
+тел.: 8-950-850-73-19 
 </div>
+«Перемен требуют наши сердца… Мы ждём перемен!» И они будут! Долой скучные праздники с тягомотными стихами и маршами Мендельсона. Давайте всё перевернём с ног на голову!
+Готовы?!  Тогда я жду самых креативных молодожёнов, которые готовы к нестандартным решениям.  Поверьте, даже самые популярные свадебные традиции можно преподнести  по-другому и я точно знаю, как это сделать! Например: вместо традиционного зажжения семейного очага - песочная церемония на мостике влюбленных или вместо уже поднадоевших свечей в конце свадьбы - цветок семейного счастья.
+
+Выбор за Вами! А то, что Ваша свадьба будет нестандартно оригинальной - я гарантирую!
+<ul class="gallery">
+<li class="span2">
+<figure class="img-polaroid"><a class="magnifier" href="img/ci/ci-pic-1.jpg" ><img alt="" src="img/ci/small/ci-pic-1.jpg"></a></figure>
 </li>
-<li class="span4 clearfix">
-<figure class="img-polaroid"><img alt="" src="img/tamada/tamada2.jpg"></figure>
-<div class="extra-wrap cat_item-wrap">
-<a class="lead" href="#">Виктория Пальчун</a><br>
-8-950-850-73-19 
-</div>
+<li class="span2">
+<figure class="img-polaroid"><a class="magnifier" href="img/ci/ci-pic-2.jpg"><img alt="" src="img/ci/small/ci-pic-2.jpg"></a></figure>
 </li>
-<li class="span4 clearfix">
-<figure class="img-polaroid"><img alt="" src="img/tamada/tamada3.jpg"></figure>
-<div class="extra-wrap cat_item-wrap">
-<a class="lead" href="#">Марина Шумакова</a><br>
-8-950-850-73-19 
-</div>
+<li class="span2">
+<figure class="img-polaroid"><a class="magnifierф" href="img/ci/ci-pic-3.jpg"><img alt="" src="img/ci/small/ci-pic-3.jpg"></a></figure>
 </li>
-<li class="span4 clearfix">
-<figure class="img-polaroid"><img alt="" src="img/tamada/tamada4.jpg"></figure>
-<div class="extra-wrap cat_item-wrap">
-<a class="lead" href="#">Любовь Христич</a><br>
-8-950-850-73-19 
-</div>
+<li class="span2">
+<figure class="img-polaroid"><a class="magnifier" href="img/ci/ci-pic-4.jpg"><img alt="" src="img/ci/small/ci-pic-4.jpg"></a></figure>
 </li>
-<li class="span4 clearfix">
-<figure class="img-polaroid"><img alt="" src="img/tamada/tamada5.jpg"></figure>
-<div class="extra-wrap cat_item-wrap">
-<a class="lead" href="#">Любовь Христич</a><br>
-8-950-850-73-19 
-</div>
+<li class="span2">
+<figure class="img-polaroid"><a class="magnifier" href="img/ci/ci-pic-5.jpg"><img alt="" src="img/ci/small/ci-pic-5.jpg"></a></figure>
 </li>
-<li class="span4 clearfix">
-<figure class="img-polaroid"><img alt="" src="img/tamada/tamada6.jpg"></figure>
-<div class="extra-wrap cat_item-wrap">
-<a class="lead" href="#">Любовь Христич</a><br>
-8-950-850-73-19 
-</div>
+<li class="span2">
+<figure class="img-polaroid"><a class="magnifier" href="img/ci/ci-pic-6.jpg"><img alt="" src="img/ci/small/ci-pic-6.jpg"></a></figure>
 </li>
-<li class="span4 clearfix">
-<figure class="img-polaroid"><img alt="" src="img/tamada/tamada7.jpg"></figure>
-<div class="extra-wrap cat_item-wrap">
-<a class="lead" href="#">Любовь Христич</a><br>
-8-950-850-73-19 
-</div>
+<li class="span2">
+<figure class="img-polaroid"><a class="magnifier" href="img/ci/ci-pic-5.jpg" ><img alt="" src="img/ci/small/ci-pic-5.jpg"></a></figure>
 </li>
-<li class="span4 clearfix">
-<figure class="img-polaroid"><img alt="" src="img/tamada/tamada8.jpg"></figure>
-<div class="extra-wrap cat_item-wrap">
-<a class="lead" href="#">Любовь Христич</a><br>
-8-950-850-73-19 
-</div>
-</li>
-<li class="span4 clearfix">
-<figure class="img-polaroid"><img alt="" src="img/tamada/tamada9.jpg"></figure>
-<div class="extra-wrap cat_item-wrap">
-<a class="lead" href="#">Любовь Христич</a><br>
-8-950-850-73-19 
-</div>
-</li>
-<li class="span4 clearfix">
-<figure class="img-polaroid"><img alt="" src="img/tamada/tamada10.jpg"></figure>
-<div class="extra-wrap cat_item-wrap">
-<a class="lead" href="#">Любовь Христич</a><br>
-8-950-850-73-19 
-</div>
-</li>
-<li class="span4 clearfix">
-<figure class="img-polaroid"><img alt="" src="img/tamada/tamada11.jpg"></figure>
-<div class="extra-wrap cat_item-wrap">
-<a class="lead" href="#">Любовь Христич</a><br>
-8-950-850-73-19 
-</div>
-</li>
-<li class="span4 clearfix">
-<figure class="img-polaroid"><img alt="" src="img/tamada/tamada12.jpg"></figure>
-<div class="extra-wrap cat_item-wrap">
-<a class="lead" href="#">Любовь Христич</a><br>
-8-950-850-73-19 
-</div>
+<li class="span2">
+<figure class="img-polaroid"><a class="magnifier" href="img/ci/ci-pic-6.jpg"><img alt="" src="img/ci/small/ci-pic-6.jpg"></a></figure>
 </li>
 </ul>
 </div>
 <div class="span4">
 <h3>Справочник</h3>
 <ul class="list">
-<li><a href="#">Где провести прааздник?</a></li>
+<li><a href="#">Где провести праздник?</a></li>
 <li><a href="#">Кто проведёт праздник?</a></li>
 <li><a href="#">Свадебные и вечерние наряды</a></li>
 <li><a href="#">Причёска, макияж, маникюр</a></li>
@@ -254,61 +204,8 @@
 
 
 <div class="row">
-<div class="span12">
-<h3 class="indent-1">Копилка праздничных услуг</h3>
-<ul class="thumbnails clearfix">
-
-<li class="thumbnail span3">
-    <div class="maxheight">
-        <figure class="img-polaroid">
-            <a class="magnifier fancybox" data-fancybox-group="gallery" title="Бумажное шоу" href="img/kopilka/papershow-big.jpg">
-                <img alt="" src="img/kopilka/papershow.jpg">
-            </a>
-        </figure>
-        <div class="caption">
-            <a class="lead" href="#">Бумажное шоу</a><br>
-        </div>
-    </div>
-</li>
-<li class="thumbnail span3">
-    <div class="maxheight">
-        <figure class="img-polaroid">
-        <a class="magnifier fancybox"   data-fancybox-group="gallery" title="Кофейная пауза"  href="img/kopilka/cafe-big.jpg">
-            <img alt="" src="img/kopilka/cafe.jpg">
-        </a>
-        </figure>
-        <div class="caption">
-            <a class="lead" href="#">Кофейная пауза</a><br>
-        </div>
-    </div>
-</li>
-<li class="thumbnail span3">
-    <div class="maxheight">
-        <figure class="img-polaroid">
-            <a class="magnifier fancybox"   data-fancybox-group="gallery" title="Freak-show" href="img/kopilka/freek-big.jpg">
-            <img alt="" src="img/kopilka/freek.jpg">
-            </a>
-            </figure>
-        <div class="caption">
-        <a class="lead" href="#">Freak-show</a><br>
-</div>
-</div>
-</li>
-<li class="thumbnail span3">
-<div class="maxheight">
-<figure class="img-polaroid"><a class="magnifier fancybox" data-fancybox-group="gallery"  title="Боди-арт" href="img/kopilka/bodyart-big.jpg"><img alt="" src="img/kopilka/bodyart.jpg"></a></figure>
-<div class="caption">
-<a class="lead" href="#">Боди-арт</a><br>
-</div>
-</div>
-</li>
-</ul>
-</div>
-</div>
-
-<div class="row">
-<div class="span8">
-<h3>Свадьба в Таганроге</h3>
+<div class="span6">
+<h3 class="indent-2">Свадьба в Таганроге</h3>
 <div class="block-1">
 <h4 class="pink-h"><a href="#" >Какой год? Какая свадьба?</a></h4>
 Все мы знаем, когда празднуется серебряная и золотая свадьбы, а какие свадьбы еще бывают? Мы подобрали для Вас годовщины всех свадеб. <br>
@@ -358,8 +255,54 @@
 <br>
 
 </div>
-<div class="span4">
-<div class="child-block">
+
+           <div class="span6">
+                <h3 class="indent-2">Сопутствующие услуги</h3>
+                <div class="list_carousel responsive clearfix">
+                  <ul id="foo">
+                    <li>
+                        <div>
+                            <figure class="cat-pic"><a class="" href="#"><img alt="" src="img/cat-ico/cafe.png"></a></figure>
+                            <div class="caption">
+                                <a class="lead" href="#">Где провести праздник</a><br>
+                                Рестораны, кафе, банкетные залы 
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <figure class="cat-pic"><a class="" href="#"><img alt="" src="img/cat-ico/makeup.png"></a></figure>
+                            <div class="caption">
+                                <a class="lead" href="#">Причёска, макияж, маникюр</a><br>
+                                Парикмахеры, визажисты, салоны красоты 
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <figure class="cat-pic"><a class="" href="#"><img alt="" src="img/cat-ico/photo.png"></a></figure>
+                            <div class="caption">
+                            <a class="lead" href="#">Фото, видео</a><br>
+                                Фотосъёмка, видеосьёмка
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <figure class="cat-pic"><a class="" href="#"><img alt="" src="img/cat-ico/naryady.png"></a></figure>
+                            <div class="caption">
+                                <a class="lead" href="#">свадебные и вечерние наряды</a><br>
+                                Свадебные и вечерние платья, мужские костюмы, обувь, аксессуары
+                            </div>
+                        </div>
+                    </li>
+                  </ul>
+                  <a id="prev" class="prev" href="#"></a>
+                  <a id="next" class="next" href="#"></a>
+              </div>
+            </div>    
+<div class="span6">
+<div class="child-block clearfix">
 <h3>Детские праздники</h3>
 <img src="img/children-1.png">
 <ul class="list">
