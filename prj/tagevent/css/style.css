@@ -59,6 +59,21 @@ a.lead{
 a.lead:hover{
 	color:#000;
 	}
+
+a.link-1{
+	color:#000;
+	font-family:'MagistralTT',serif;
+	font-size:15px;
+	line-height:1em;
+	margin:0;
+	font-weight:normal
+
+}
+a.link-1:hover{
+	color:#000;
+	}
+
+
 .text-info{
 	color:#856f6b
 }
