@@ -666,10 +666,11 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#856f6a', end
 }
 .com_wrap{
 	border-bottom: 1px solid #231F20;
+
 }
 .com_wrap .com_name{
 	font-weight: bold;
-	color:#0051C1;
+	color:#856F6A;
 	 margin: 10px 0;
 }
 .com_wrap .com_message {
@@ -704,8 +705,13 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#856f6a', end
 	border:1px dotted #b3b1ae;
 	border-radius:3px;
 	padding: 10px 0;
-}
 
+}
+.bonus_wrap{
+	margin-bottom: 60px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+  padding: 10px;
+}
 .bonus_h {
 	padding: 20px;
 	/*box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1) inset, -2px -2px 10px rgba(0, 0, 0, 0.1) inset;*/
@@ -718,18 +724,23 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#856f6a', end
     float: left;
 }
 .bonus_h a {
-    color: #0051C1;
+    color: #000;
     display: table-cell;
     font: bold 20px "MagistralTT",sans-serif;
     height: 64px;
     text-transform: uppercase;
     vertical-align: middle;
 }
+.bonus_h a .bonus_contacts{
+	text-transform: none;
+	font: bold 16px "MagistralTT",sans-serif;
 
+}
 .bonus_h .bonus_ {
     border-radius: 0 20px 20px 0;
     color: #FFFFFF;
     display: block;
+    height: 34px;
     float: right;
     font: 14px Arial,sans-serif;
     padding: 15px;
@@ -758,4 +769,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4D6FFE', end
     top: -30px;
     width: 90px;
     background-size:contain; 
+}
+.com_select{
+	width: 100%;
 }

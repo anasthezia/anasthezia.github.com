@@ -149,14 +149,25 @@
 <h3>Оставь отзыв - получи бонус!</h3>
 <p>
 Уважаемые гости-посетител и нашего кафе! Нам важно ваше мнение о нашей работе и мы предлагаем вам присылать свои отзывы и предложения. Какие шоу-программы вам особенно запомнились, какие блюда стали вашими любимыми, и что, по вашему мнению, стоит подкорректирова ть в нашей работе. Убедительная просьба быть взаимовежливыми , так как все ваши отзывы будут опубликованы на нашем сайте. При отправлении сообщения не забудьте указать ваш контактный номер телефона (на сайте публиковаться не будет). Со своей стороны мы гарантируем каждому, приславшему отзыв, в подарок карту гостя с накопительной системой скидок от 3 до 7%.</p>
+<form class="add_comment clearfix" action="#">
+<p class="selecttext">Выберите кафе</p>
+<select name="make[]" class="com_select">
+<option selected="selected">Южный город</option>
+<option value="Item 1">Михаил светлов</option>
+<option value="Item 2">Колхох</option>
+<option value="Item 3">Рай</option>
+<option value="Item 4">Извольте</option>
+</select>
+</span>
+
+            <input type="text" class="text com_field" name="Имя" value="" placeholder="Представьтесь, пожалуйста" >
+            <textarea placeholder="Введите текст сообщения" value=" " name="message" class="message com_field"></textarea>
+            <input  class="button com_send" type="submit" value="Оставить отзыв" >
+        </form>
+<h4 class="blue-h">Последние отзывы</h4>
+
     <div class="bonus_wrap">
-        <div class="bonus_h clearfix"> <div><a href="#">Кафе «Южный город»</a></div><span class="bonus_">Десерт на сумму 100 рублей в подарок</span></div>
-                <form class="add_comment clearfix" action="#">
-            <input type="text" class="text com_field" name="Имя" value="" placeholder="Представьтесь, пожалуйста" >
-            <textarea placeholder="Введите текст сообщения" value=" " name="message" class="message com_field"></textarea>
-            <input  class="button com_send" type="submit" value="Добавить комментарий" >
-        </form>
-    <h4>Последний отзыв</h4>
+        <div class="bonus_h clearfix"> <div><a href="#">Кафе «Южный город»<br/ ><span class="extra-wrap bonus_contacts"> г.Таганрог, ул.Чехова, 375,  тел.: 8-950-850-73-19 </span></a></div><span class="bonus_">Десерт на сумму 100 рублей в подарок</span></div>
         <div class="comment"> 
         <div class="com_wrap">
             <p class="com_name">Иван Васильев <span class="com_name_attr">0:44, четверг, 24.05.2013</span></p>
@@ -164,8 +175,8 @@
             <a href="#" class="com_answer">Ответить</a>
         </div>
     </div>
-    <a href="#" class="tb link-1">Читать все отзывы о кафе "Южный город" >></a>
-    <ul    class="togglebox1 comments">
+    <a href="#" class="tb link-1">Читать все отзывы о кафе "Южный город" на странице>></a>
+ <!--   <ul    class="togglebox1 comments">
         
 <li class="comment"> 
         <div class="com_wrap">
@@ -217,11 +228,6 @@
     </div>
       <div class="bonus_wrap">
         <div class="bonus_h clearfix"> <div><a href="#">Кафе «Южный город»</a></div><span class="bonus_">Десерт на сумму 100 рублей в подарок</span></div>
-                <form class="add_comment clearfix" action="#">
-            <input type="text" class="text com_field" name="Имя" value="" placeholder="Представьтесь, пожалуйста" >
-            <textarea placeholder="Введите текст сообщения" value=" " name="message" class="message com_field"></textarea>
-            <input  class="button com_send" type="submit" value="Добавить комментарий" >
-        </form>
     <h4>Последний отзыв</h4>
         <div class="comment"> 
         <div class="com_wrap">
@@ -279,16 +285,10 @@
             <a href="#" class="com_answer">Ответить</a>
         </div>
     </li>
-    </ul>
+    </ul>-->
     </div>
       <div class="bonus_wrap">
-        <div class="bonus_h clearfix"> <div><a href="#">Кафе «Южный город»</a></div><span class="bonus_">Десерт на сумму 100 рублей в подарок</span></div>
-                <form class="add_comment clearfix" action="#">
-            <input type="text" class="text com_field" name="Имя" value="" placeholder="Представьтесь, пожалуйста" >
-            <textarea placeholder="Введите текст сообщения" value=" " name="message" class="message com_field"></textarea>
-            <input  class="button com_send" type="submit" value="Добавить комментарий" >
-        </form>
-    <h4>Последний отзыв</h4>
+        <div class="bonus_h clearfix"> <div><a href="#">Кафе «Михаил Светлов»<br/ ><span class="extra-wrap bonus_contacts"> г.Таганрог, ул.Чехова, 375,  тел.: 8-950-850-73-19 </span> </a></div><span class="bonus_">Два бокала пива</span></div>
         <div class="comment"> 
         <div class="com_wrap">
             <p class="com_name">Иван Васильев <span class="com_name_attr">0:44, четверг, 24.05.2013</span></p>
@@ -296,56 +296,7 @@
             <a href="#" class="com_answer">Ответить</a>
         </div>
     </div>
-    <a href="#" class="tb link-1">Читать все отзывы о кафе "Южный город" >></a>
-    <ul    class="togglebox1 comments">
-        
-<li class="comment"> 
-        <div class="com_wrap">
-            <p class="com_name">Иван Васильев <span class="com_name_attr">0:44, четверг, 24.05.2013</span></p>
-            <p class="com_message">Шило на мыло меняют- клан меняют свою шкуру и все- Патриарх Никон.: «Ибо совершивший грех есть раб греха , хотя бы имел тысячи корон на свей голове, но кто поступает праведно, тот больше самого царя, хотя бы он был последний из всех».</p>
-            <a href="#" class="com_answer">Ответить</a>
-        </div>
-    </li>
-    <li class="comment">
-        <div class="com_wrap">
-            <p class="com_name">Константин Константинопольский <span class="com_name_attr">0:44, четверг, 24.05.2013</span></p>
-            <p class="com_message">это же сплошное мимимими</p>
-            <a href="#" class="com_answer">Ответить</a>
-        </div>
-        <ul class="sub_comments"> 
-            <li class="sub_comment">
-                <div class="com_wrap">
-                <p class="com_name">Leonid Ivashentsev<span class="com_name_attr">0:44, четверг, 24.05.2013</span></p>
-                <p class="com_message">хороший человек.<br/>а откуда он тырил пиво то?</p>
-                <a href="#" class="com_answer">Ответить</a>
-            </div>
-            <ul class="sub_comments"> 
-                <li class="sub_comment">
-                    <div class="com_wrap">
-                        <p class="com_name">Иван Васильев<span class="com_name_attr">0:44, четверг, 24.05.2013</span></p>
-                        <p class="com_message">Шило на мыло меняют- клан меняют свою шкуру и все- Патриарх Никон.: «Ибо совершивший грех есть раб греха , хотя бы имел тысячи корон на свей голове, но кто поступает праведно, тот больше самого царя, хотя бы он был последний из всех».</p>
-                        <a href="#" class="com_answer">Ответить</a>
-                    </div>
-                </li>
-            </ul>
-            </li>
-            <li class="sub_comment">        
-                <div class="com_wrap">
-                    <p class="com_name">Leonid Ivashentsev<span class="com_name_attr">0:44, четверг, 24.05.2013</span></p>
-                    <p class="com_message">хотели бы пригласить его в гости, чтобы пообщаться и обнять его.<br/>Слишком толсто.</p>
-                    <a href="#" class="com_answer">Ответить</a>
-                </div>
-            </li>
-        </ul>
-    </li>
-    <li class="comment">
-        <div class="com_wrap">
-            <p class="com_name">Иван Васильев <span class="com_name_attr">0:44, четверг, 24.05.2013</span></p>
-            <p class="com_message">это же сплошное мимимими</p>
-            <a href="#" class="com_answer">Ответить</a>
-        </div>
-    </li>
-    </ul>
+    <a href="#" class="tb link-1">Читать все отзывы о кафе "Михаил Светлов" на странице>></a>
     </div>
     
 </div>
