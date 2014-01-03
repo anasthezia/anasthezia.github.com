@@ -7,8 +7,35 @@
     <link href="css/style.css" rel="stylesheet" type="text/css" />
     <!--<link rel="stylesheet" href="css/style_vertical.css" type="text/css" media="screen"/>-->
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script type="text/javascript" language="javascript" src="js/jquery.carouFredSel-6.2.1-packed.js"></script>
     <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
     <script src="js/jquery.easing.compatibility.js" type="text/javascript"></script>
+
+        <!-- fire plugin onDocumentReady -->
+        <script type="text/javascript" language="javascript">
+            $(function() {
+
+
+
+                //  Scrolled by user interaction
+                $('#foo2').carouFredSel({
+                    auto: false,
+                    prev: '#prev2',
+                    next: '#next2',
+                    pagination: "#pager2",
+                    mousewheel: true,
+                    swipe: {
+                        onMouse: true,
+                        onTouch: true
+                    }
+                });
+
+            });
+        </script>
+
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
 </head>
 <body>
     <header id="section0">
@@ -87,45 +114,264 @@
     </section>
     <section class="sec3" id="section3">
         <h2><span class="content">Участники</span></h2>
-        <div class="content">
-            <ul class="member-list clearfix">
+        <div class="content list_carousel">
+            <ul class="member-list clearfix" id="foo2">
                 <li>
-                    <div class="m_logo">
-                        <img src="img/m_img-2.png" alt="">
+                    <div class="li-wrap">
+                        <div class="m_logo">
+                            <img src="logos/m_img-2.png" alt="">
+                        </div>
+                        <div class="m_info">
+                            <h4><a href="http://kamelia-salon.ru"><span>Свадебный салон</span>"Камалия"</a></h4>
+                        </div>
                     </div>
-                    <div class="m_info">
-                        <h4><span>Фотограф</span>Алексей Яковлев</h4>
-                        <div class="m_tel">8 (8634) 568 247</div>
+                    <div class="li-wrap">
+                        <div class="m_logo">
+                            <img src="logos/choco-bum.jpg" alt="">
+                        </div>
+                        <div class="m_info">
+                            <h4><a href="http://www.chocoboom.ru"><span>Шоколадные фонтаны</span>Шоколадный бум</a></h4>
+                        </div>
                     </div>
                 </li>
                 <li>
-                    <div class="m_logo">
-                        <img src="img/m_img-1.png" alt="">
+                    <div class="li-wrap">
+                        <div class="m_logo">
+                            <img src="logos/vasilchenko-2.jpg" alt="">
+                        </div>
+                        <div class="m_info">
+                            <h4><a href="http://www.vasilchenkosergey.com"><span>Фотограф</span>Васильченко Сергей</a></h4>
+                        </div>
                     </div>
-                    <div class="m_info">
-                        <h4><span>Студия праздника</span>"Шароёж"</h4>
-                        <div class="m_tel">8 (8634) 568 247</div>
+                    <div class="li-wrap">
+                        <div class="m_logo">
+                            <img src="logos/m_img-2.png" alt="">
+                        </div>
+                        <div class="m_info">
+                            <h4><span>Флорист</span>Малышева Татьяна</h4>
+                        </div>
                     </div>
                 </li>
                 <li>
-                    <div class="m_logo">
-                        <img src="img/m_img-2.png" alt="">
+                    <div class="li-wrap">
+                        <div class="m_logo">
+                            <img src="logos/m_img-2.png" alt="">
+                        </div>
+                        <div class="m_info">
+                            <h4><a href="http://limo505.ru"><span>Авто на заказ</span>"Лимузин"</a></h4>
+                        </div>
                     </div>
-                    <div class="m_info">
-                        <h4><span>Фотограф</span>Алексей Яковлев</h4>
-                        <div class="m_tel">8 (8634) 568 247</div>
+                    <div class="li-wrap">
+                        <div class="m_logo">
+                            <img src="logos/chocolad.jpg" alt="">
+                        </div>
+                        <div class="m_info">
+                            <h4><a href="http://vk.com/club22156555"><span>Кафе</span>"Шоколад"</a></h4>
+                        </div>
                     </div>
                 </li>
                 <li>
-                    <div class="m_logo">
-                        <img src="img/m_img-1.png" alt="">
+                    <div class="li-wrap">
+                        <div class="m_logo">
+                            <img src="logos/m_img-2.png" alt="">
+                        </div>
+                        <div class="m_info">
+                            <h4><span>Студия праздничного дизайна</span>"Зажигалки"</h4>
+                        </div>
                     </div>
-                    <div class="m_info">
-                        <h4><span>Студия праздника</span>"Шароёж"</h4>
-                        <div class="m_tel">8 (8634) 568 247</div>
+                    <div class="li-wrap">
+                        <div class="m_logo">
+                            <img src="logos/m_img-2.png" alt="">
+                        </div>
+                        <div class="m_info">
+                            <h4><a href="http://vk.com/id111437330"><span>Фотограф</span>Светлана Мощенок</a></h4>
+                        </div>   
+                    </div>
+                </li>
+                <li>
+                    <div class="li-wrap">
+                        <div class="m_logo">
+                            <img src="logos/peseckaya.jpg" alt="">
+                        </div>
+                        <div class="m_info">
+                            <h4><a href="https://vk.com/id46495826"><span>Художник-дизайнер</span>Светлана Песецкая</a></h4>
+                        </div>
+                    </div>
+                    <div class="li-wrap">
+                        <div class="m_logo">
+                            <img src="logos/arsenev.jpg" alt="">
+                        </div>
+                        <div class="m_info">
+                            <h4><a href="http://tagevent.ru/catalog/pirotexnika,_speczefektyi/fejerverki,_salyutyi/festival_t1.html"><span>Пиротехник</span>Арсеньев</a></h4>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="li-wrap">
+                        <div class="m_logo">
+                            <img src="logos/tkachenko.jpg" alt="">
+                        </div>
+                        <div class="m_info">
+                            <h4><a href="https://vk.com/tagwed"><span>Фотограф</span>Иван Ткаченко</a></h4>
+                        </div>
+                    </div>
+                    <div class="li-wrap">
+                        <div class="m_logo">
+                            <img src="logos/m_img-2.png" alt="">
+                        </div>
+                        <div class="m_info">
+                            <h4><span>Фото+организатор</span>Никитины</h4>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="li-wrap">
+                        <div class="m_logo">
+                            <img src="logos/kochanov.jpg" alt="">
+                        </div>
+                        <div class="m_info">
+                            <h4><a href="https://vk.com/club32181739"><span>Фотограф</span>Качанов Игорь</a></h4>
+                        </div>   
+                    </div>
+                    <div class="li-wrap">
+                        <div class="m_logo">
+                            <img src="logos/shmytikova.jpg" alt="">
+                        </div>
+                        <div class="m_info">
+                            <h4><a href="http://tagevent.ru/catalog/artistyi_eksklyuziv/vedushhie,_tamada/shmyitikova-mariya.html"><span>Ведущая</span>Шмытикова Мария</a></h4>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="li-wrap">
+                        <div class="m_logo">
+                            <img src="logos/m_img-2.png" alt="">
+                        </div>
+                        <div class="m_info">
+                            <h4><a href="http://kapitolina35.ru"><span>Шоу-группа</span>"3D Mix"</a></h4>
+                        </div>
+                    </div>
+                    <div class="li-wrap">
+                        <div class="m_logo">
+                            <img src="logos/fasol.jpg" alt="">
+                        </div>
+                        <div class="m_info">
+                            <h4><a href="http://tagevent.ru/catalog/restoran/kafe/fa-sol.html"><span>Кафе</span>"Фа Соль"</a></h4>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="li-wrap">
+                        <div class="m_logo">
+                            <img src="logos/voronkov-2.jpg" alt="">
+                        </div>
+                        <div class="m_info">
+                            <h4><a href="https://vk.com/sergey_v"><span>Видеограф</span>Сергей Воронков</a></h4>
+                        </div>
+                    </div>
+                    <div class="li-wrap">
+                        <div class="m_logo">
+                            <img src="logos/kapriz.jpg" alt="">
+                        </div>
+                        <div class="m_info">
+                            <h4><a href="http://kapris-taganrog.ru/"><span>Cвадебный салон</span>"Каприз"</a></h4>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="li-wrap">
+                        <div class="m_logo">
+                            <img src="logos/sharoezh.jpg" alt="">
+                        </div>
+                        <div class="m_info">
+                            <h4><a href="https://vk.com/sharoeg"><span>Студия праздничного дизайна</span>"ШароЕж"</a></h4>
+                        </div>
+                    </div>
+                    <div class="li-wrap">
+                        <div class="m_logo">
+                            <img src="logos/c-ray.jpg" alt="">
+                        </div>
+                        <div class="m_info">
+                            <h4><a href="http://chvetochniyray.ru"><span>Флористы</span>"Цветочный Рай"</a></h4>
+                        </div>    
+                    </div>
+                </li>
+                <li>
+                    <div class="li-wrap">
+                        <div class="m_logo">
+                            <img src="logos/r-ptica.jpg" alt="">
+                        </div>
+                        <div class="m_info">
+                            <h4><a href="https://vk.com/club46647504"><span>салон авторских патьев Ирины Камбур + студия праздника</span>"Салон Давай Поженимся + Райская птица"</a></h4>
+                        </div>    
+                    </div>
+                    <div class="li-wrap">
+                        <div class="m_logo">
+                            <img src="logos/bibin.jpg" alt="">
+                        </div>
+                        <div class="m_info">
+                            <h4><a href="https://vk.com/emotionbride"><span>Видеооператор</span>Бибин Сергей</a></h4>
+                        </div>   
+                    </div> 
+                </li>
+                <li>                   
+                    <div class="li-wrap">
+                        <div class="m_logo">
+                            <img src="logos/m_img-2.png" alt="">
+                        </div>
+                        <div class="m_info">
+                            <h4><a href="http://tagevent.ru/catalog/organizer/duet_event.html"><span>Свадебное агентство</span>"Дуэт"</a></h4>
+                        </div>
+                    </div>
+                    <div class="li-wrap">
+                        <div class="m_logo">
+                            <img src="logos/academiya.jpg" alt="">
+                        </div>
+                        <div class="m_info">
+                            <h4><a href="http://tagevent.ru/catalog/restoran/kafe/academiacafe.html"><span>Гранд-кафе</span>"Академия"</a></h4>
+                        </div>    
+                    </div>
+                </li>
+                <li>
+                    <div class="li-wrap">
+                        <div class="m_logo">
+                            <img src="logos/m_img-2.png" alt="">
+                        </div>
+                        <div class="m_info">
+                            <h4><span>Ведущая</span>Мега Света</h4>
+                        </div>    
+                    </div>
+                    <div class="li-wrap">
+                        <div class="m_logo">
+                            <img src="logos/sharadyga.jpg" alt="">
+                        </div>
+                        <div class="m_info">
+                            <h4><a href="https://vk.com/sharadyga"><span>Воздушные шары</span>"Шарадуга"</a></h4>
+                        </div>    
+                    </div>
+                </li>
+                <li>
+                    <div class="li-wrap">
+                        <div class="m_logo">
+                            <img src="logos/zueva-2.jpg" alt="">
+                        </div>
+                        <div class="m_info">
+                            <h4><a href="https://vk.com/club22147447"><span>Ателье</span>"Дания"</a></h4>
+                        </div>
+                    </div>
+                    <div class="li-wrap">
+                        <div class="m_logo">
+                            <img src="logos/m_img-2.png" alt="">
+                        </div>
+                        <div class="m_info">
+                            <h4><span>Свадебный салон+студия красоты</span>"Орхидея+Зеркало"</h4>
+                        </div>
                     </div>
                 </li>
             </ul>
+                <a id="prev2" class="prev" href="#">&lt;</a>
+                <a id="next2" class="next" href="#">&gt;</a>
+                <div id="pager2" class="pager"></div>
         </div>
         <a href="#section0" class="totop scroll"></a>
     </section>
@@ -182,6 +428,7 @@
                     </div>
                 </li>
             </ul>
+
         </div>
         <a href="#section0" class="totop scroll"></a>
     </section>
@@ -190,7 +437,8 @@
             <div class="map">
                 <img src="img/map.png" alt="">
                 <div class="cont-text">
-                    <p>г.Таганрог<br/>улица Дзержинского, 161<br/>конгресс-отель «Таганрог»</p>
+                    <p>г.Таганрог<br/>улица Дзержинского, 161</p>
+                    <p>конгресс-отель «Таганрог»</p>
                      <p>Режим работы:<br/> с 11.00 до 20.00</p>
                         <p>вход на выставку свободный</p>
                 </div>

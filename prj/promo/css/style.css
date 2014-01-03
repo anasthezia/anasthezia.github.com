@@ -37,6 +37,9 @@ div.content {
 }
 div.content p{
     margin: 0 0 0.5em;}
+ .map p{
+    margin: 0 0 1.2em;}
+
 h1, h2, h3{
     font-family: 'Bookman Old Style', serif;
 
@@ -57,11 +60,13 @@ h2{
 h3, .h3{
     font: 20px 'Verdana', Arial, Helvetica, sans-serif;
     margin: 10px 0 8px;
+    line-height: 1;
 }
 h4{
     font: bold  18px 'Verdana', Arial, Helvetica, sans-serif;
     color:#f05450;
     margin: 0;
+    line-height: 1;
 }
 .h7 {
     font: 20px 'Verdana', Arial, Helvetica, sans-serif;
@@ -161,7 +166,7 @@ div.content .h7 {
 .h-banner{
     position: absolute;
     top: -86px;
-    left: 156px;
+    left: 154px;
     height: 609px;
 
     width: 440px;
@@ -236,8 +241,9 @@ h1.b_h1 span.h-year{
     list-style: none;
 }
 .event-block{
-    margin: 30px 0;
+    margin: 0 0 24px 0;
 }
+.event-block h4 { margin: 0 0 8px 0;}
 .e_time{
     float: left;
     width: 149px;
@@ -260,18 +266,26 @@ h1.b_h1 span.h-year{
     float: left;
     margin-right: 20px;
     margin-bottom: 26px;
-    height: 112px;
     overflow: hidden;
-    width: 414px;
+    width: 280px;
+     height: 600px;
 }
+.member-list li .li-wrap{
+    height: 228px;
+    margin: 20px 0 40px;
+    overflow: hidden;
 
+}
+.member-list li .li-wrap a{
+    text-decoration: none;
+    color: inherit; 
+}
 .member-list li .m_logo{
-    width: 110px;
-    height: 110px;
+    width: 150px;
+    height: 150px;
     overflow: hidden;
     border: 1px solid #b1b1b1;
-    float: left;
-    margin: 0 38px 0 0;
+    margin: 0 auto;
 }
 .member-list li .m_logo img{
     width: 100%;
@@ -285,7 +299,7 @@ h1.b_h1 span.h-year{
     font: normal 16px Verdana;
 }
 .member-list li .m_info{
-    float: left;
+ text-align: center;
 }
 .member-list li .m_tel {
     color: #8a8a8a;
@@ -343,7 +357,7 @@ h1.b_h1 span.h-year{
     position: absolute;
     background: url("../img/b-footer-bg.png") repeat 0 0 transparent;
     top:0;
-    left:140px;
+    left:136px;
     height: 306px;
     width: 300px;
     padding: 80px 118px 80px 40px;
@@ -352,8 +366,11 @@ h1.b_h1 span.h-year{
 }
 footer{
     background: url("../img/footer-bg.png") repeat 0 0 #fff;
-    height: 178px;
-    padding-top: 40px;
+    height: 198px;
+    position: relative;
+}
+footer>div.content {
+    padding: 34px 0 28px;
 }
 .f_left {
     float: left;
@@ -364,13 +381,16 @@ footer{
 }
 
 .f_menu {
-    margin: 0;
+    margin: 0 0 17px 0;
     padding: 0;
     list-style: none;
+    display: block;
+    overflow: hidden;
 }
 .copyright {
     font-size: 12px;
-    color:#494949
+    color:#494949;
+    margin-top: 34px;
 }
 .f_menu li {
     float: left;
@@ -389,7 +409,7 @@ footer{
 }
 
 .f_social {
-    margin: 0 0 0 20px;
+    margin: 0 0 0 17px;
     padding: 0;
     list-style: none;
 }
@@ -409,3 +429,66 @@ footer{
     display: block;
     padding: 0 0 0 3px;
 }
+
+.list_carousel {
+                margin: 0;
+                width: 100%;
+                position: relative;
+            }
+.list_carousel ul {
+                margin: 0;
+                padding: 0;
+                list-style: none;
+                display: block;
+            }
+.list_carousel li {
+             /*   font-size: 40px;
+                color: #999;
+                text-align: center;
+                background-color: #eee;
+                border: 5px solid #999;
+                width: 50px;
+                height: 50px;
+                padding: 0;
+                margin: 6px;
+                display: block;
+                float: left;*/
+            }
+
+.prev, .next {
+    background: none repeat scroll 0 0 #000000;
+    border-radius: 20px;
+    height: 40px;
+    position: absolute;
+    width: 40px;
+    color: #FFFFFF;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 40px;
+    text-align: center;
+    text-decoration: none;
+
+
+
+}
+            .prev {
+              /*  float: left;
+                margin-left: 10px;*/
+                top:10px;
+                right: 44px;
+            }
+            .next {
+             /*   float: right;
+                margin-right: 10px;*/
+                top:10px;
+                right: 0px;
+            }
+            .pager {
+                float: left;
+                width: 300px;
+                text-align: center;
+            }
+            .pager a {
+                margin: 0 5px;
+                text-decoration: none;
+            }
