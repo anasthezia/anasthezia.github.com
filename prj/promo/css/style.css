@@ -110,6 +110,11 @@ div.content .h7 {
     width:36px;
     height: 38px;
     background: url("../img/totop.png") no-repeat 0 0 transparent;
+    opacity: 1;
+
+}
+.totop:hover{
+    opacity: 0.7;
 }
 .main-menu {
     height: 86px;
@@ -427,9 +432,8 @@ footer>div.content {
 .f_social li,  .b_social li {
     float: left;
     display: block;
-    padding: 0 0 0 3px;
-}
-
+    padding: 0 0 0 3px;}
+    
 .list_carousel {
                 margin: 0;
                 width: 100%;
@@ -467,9 +471,9 @@ footer>div.content {
     line-height: 40px;
     text-align: center;
     text-decoration: none;
-
-
-
+}
+.prev:hover, .next:hover {
+background: #5ccfe4;
 }
             .prev {
               /*  float: left;
