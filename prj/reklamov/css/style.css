@@ -286,7 +286,16 @@ div.content .h7 {
     position: absolute;
     width: 64px;
 }
-
+.montag2{
+  background: url("../img/workman2.png") no-repeat scroll center 0 rgba(0, 0, 0, 0);
+    float: right;
+    font: 12px Myriad Pro,Arial,sans-serif;
+    margin-left: 80px;
+    padding: 216px 15px 15px;
+    position: relative;
+    text-align: center;
+    width: 190px;
+}
 .price-content p{
     margin: 0;
 }
