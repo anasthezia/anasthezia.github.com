@@ -1,0 +1,287 @@
+@font-face {
+    font-family: 'Cuprum';
+    src: url('../fonts/cuprum-regular-webfont.eot');
+    src: url('../fonts/cuprum-regular-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/cuprum-regular-webfont.woff') format('woff'),
+    url('../fonts/cuprum-regular-webfont.ttf') format('truetype'),
+    url('../fonts/cuprum-regular-webfont.svg#cuprumregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Cuprum';
+    src: url('../fonts/cuprum-italic-webfont.eot');
+    src: url('../fonts/cuprum-italic-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/cuprum-italic-webfont.woff') format('woff'),
+    url('../fonts/cuprum-italic-webfont.ttf') format('truetype'),
+    url('../fonts/cuprum-italic-webfont.svg#cuprumitalic') format('svg');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Cuprum';
+    src: url('../fonts/cuprum-bold-webfont.eot');
+    src: url('../fonts/cuprum-bold-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/cuprum-bold-webfont.woff') format('woff'),
+    url('../fonts/cuprum-bold-webfont.ttf') format('truetype'),
+    url('../fonts/cuprum-bold-webfont.svg#cuprumbold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Cuprum';
+    src: url('../fonts/cuprum-bolditalic-webfont.eot');
+    src: url('../fonts/cuprum-bolditalic-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/cuprum-bolditalic-webfont.woff') format('woff'),
+    url('../fonts/cuprum-bolditalic-webfont.ttf') format('truetype'),
+    url('../fonts/cuprum-bolditalic-webfont.svg#cuprumbold_italic') format('svg');
+    font-weight: bold;
+    font-style: italic;
+}
+
+
+
+@font-face {
+    font-family: 'Verdana';
+    src: url('../fonts/verdana-webfont.eot');
+    src: url('../fonts/verdana-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/verdana-webfont.woff') format('woff'),
+    url('../fonts/verdana-webfont.ttf') format('truetype'),
+    url('../fonts/verdana-webfont.svg#verdanaregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Verdana';
+    src: url('../fonts/verdanab-webfont.eot');
+    src: url('../fonts/verdanab-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/verdanab-webfont.woff') format('woff'),
+    url('../fonts/verdanab-webfont.ttf') format('truetype'),
+    url('../fonts/verdanab-webfont.svg#verdanabold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Verdana';
+    src: url('../fonts/verdanai-webfont.eot');
+    src: url('../fonts/verdanai-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/verdanai-webfont.woff') format('woff'),
+    url('../fonts/verdanai-webfont.ttf') format('truetype'),
+    url('../fonts/verdanai-webfont.svg#verdanaitalic') format('svg');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Verdana';
+    src: url('../fonts/verdanaz-webfont.eot');
+    src: url('../fonts/verdanaz-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/verdanaz-webfont.woff') format('woff'),
+    url('../fonts/verdanaz-webfont.ttf') format('truetype'),
+    url('../fonts/verdanaz-webfont.svg#verdanabold_italic') format('svg');
+    font-weight: bold;
+    font-style: italic;
+
+}
+body {
+    background: #fff;
+    font-family:Verdana, Arial, Helvetica,sans-serif;
+    font-size: 12px;
+    color: #474747;
+}
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    min-width: 980px;
+    max-width: 1920px;
+}
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Cuprum', sans-serif;
+    font-weight: normal;
+}
+h1, .h1 {
+    font-size:36px;
+}
+h2, .h2 {
+    font-size:33px;
+    margin: 10px 0 8px;
+}
+h3, .h3 {
+    font-size:28px;
+    margin: 10px 0;
+}
+h4, .h4 {
+    font-size:22px;
+}
+h5, .h5 {
+    font-size:18px;
+}
+h6, .h6 {
+    font-size:14px;
+}
+p{
+    margin: 8px 0;
+    line-height: 16px;
+    font-size: 12px;
+}
+a {
+    color:#1e6bb5;
+    text-decoration: underline;
+}
+a:hover,
+a:active, a:focus {
+    color:#1e6bb5;
+    text-decoration: none;
+}
+.container {
+    position: relative;
+margin: 0 auto;}
+.blue{
+    color:#1e6bb5;
+}
+.green{
+    color:#99e16c;
+}
+header.main_header{
+
+    background: url("../img/header-bg.png") no-repeat scroll 0 center transparent;
+}
+.main_header .logo{
+    position: absolute;
+    top: 45px;
+    left:0;
+}
+.main_header .contacts{
+    margin-top: 45px;
+}
+.main_header .contacts .phone{
+    float: left;
+    font: bold 32px/1 'Cuprum', Arial, Helvetica, sans-serif;
+}
+.main_header .contacts .address{
+    float: left;
+    font: normal 11px Tahoma, Arial, Helvetica, sans-serif;
+    margin-left: 24px;
+}
+
+.container_12{
+    position: relative;
+}
+.sec_1{
+    background: url("../img/bg-gray-noize.png") repeat #808080;
+    color:#e5e6e8;
+    padding: 70px 0 44px;
+}
+.sec_1 h2{
+    margin: -4px 0 14px;
+}
+.sec_2, .sec_4{
+    background: #fff;
+    padding: 42px 0 36px;
+}
+
+.sec_3 {
+    background: #f2f2f2;
+    padding: 40px 0 24px;
+}
+.h_wrapper-1{
+    height: 469px;
+    position: relative;
+    background: url("../img/oblako1.png") no-repeat center bottom transparent;
+}
+
+.h_wrapper-2{
+    height: 469px;
+    position: relative;
+}
+.main-image{
+    position: absolute;
+    left: 0;
+    top: -435px;
+
+}
+.main-intro {
+
+    width: 520px;
+   /* height: 268px;*/
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    margin-left: -36px;
+    font: normal 11px/17px Verdana, Helvetica, sans-serif;
+}
+
+.main-intro .big1{
+    display: inline;
+    font-size: 13px;
+}
+.main-intro .big2{
+    display: inline;
+    font-size: 15px;
+}
+.main-intro .big3{
+    display: inline;
+    font-size: 17px;
+}
+.main-intro .big4{
+    display: inline;
+    font-size: 21px;
+}
+.str1, .str2, .str3, .str4, .str5, .str6, .str7, .str8, .str9, .str10, .str11, .str12, .srt13, .str14, .str15{
+    display: block;
+}
+.str1{padding-left: 66px}
+.str2{padding-left: 35px}
+.str3{padding-left: 22px}
+.str4{padding-left: 12px}
+.str5{padding-left: 4px}
+.str6{padding-left: 4px}
+.str7{padding-left: 4px}
+.str8{padding-left: 8px}
+.str9{padding-left: 12px}
+.str10{padding-left: 16px}
+.str11{padding-left: 20px}
+.str12{padding-left: 32px}
+.str13{padding-left: 43px}
+.str14{padding-left: 66px}
+.str15{padding-left: 140px}
+
+.list-1{
+    padding: 0;
+    margin: 0;
+    list-style-position: outside;
+    list-style-image: url("../img/li-1.png");
+}
+.list-1 li{
+    padding: 8px 0 0;
+}
+footer.main_footer{
+    height: 182px;
+    background: url("../img/footer-bg.png");
+}
+.main_footer .copyright-left, .main_footer .copyright-right{
+    font: normal 12px Tahoma, Arial, Helvetica, sans-serif;
+    position: relative;
+    margin-top: 106px;
+    display: inline-block;
+}
+.main_footer .copyright-left{
+    float: left;
+}
+.main_footer .copyright-right{
+    float: right;
+}
+.shema-1 {
+    margin: 25px 0 25px 38px;
+    width: 560px;
+    float: right;
+}
+.shema-1 img{
+    width: 100%;
+}

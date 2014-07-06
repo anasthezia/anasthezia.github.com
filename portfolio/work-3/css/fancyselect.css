@@ -1,0 +1,76 @@
+.fancyselect {
+background: #fff;
+border: 1px solid #e5e5e5;
+display: inline-block;
+-moz-border-radius: 3px;
+-webkit-radius: 3px;
+border-radius: 3px;
+position: relative;
+overflow: hidden;
+    width: 100%;
+    height: 24px;
+}
+
+.sel_3 .fancyselect{
+    float: right;
+    width: 60px;
+}
+.fancyselect select, .selecttext {
+background: none;
+padding: 5px;
+border: 0;
+margin: 0;
+height: 24px;
+position: relative;
+cursor: pointer;
+text-align: left;
+}
+.selecttext {
+position: absolute;
+display: block;
+padding: 0 9px;
+line-height: 26px;
+}
+.fancyselect .arrows {
+background: url(../img/sel_arr.png)no-repeat;
+display: block;
+width: 20px;
+height: 20px;
+position: absolute;
+top: 1px;
+right: 1px;
+border: 1px solid #e5e5e5;
+    border-radius: 3px;
+}
+.sel_1 .fancyselect .arrows, .sel_3 .fancyselect .arrows{
+background-position: 6px 8px;
+}
+.sel_2 .fancyselect .arrows, .sel_3 .fancyselect .arrows {
+    background-position:6px -8px;
+}
+/*
+.fancyselect.focus {
+border: 1px solid #626262;
+-moz-box-shadow: 0 0 4px rgba(0,10,0,0.3), 0 1px 1px rgba(0,0,0,0.05);
+-webkit-box-shadow: 0 0 4px rgba(0,0,0,0.3), 0 1px 1px rgba(0,0,0,0.05);
+box-shadow: 0 0 4px rgba(0,0,0,0.3), 0 1px 1px rgba(0,0,0,0.05);
+}
+*/
+.fancyselect.disabled .selecttext,
+.fancyselect.disabled select {
+color: #bbb;
+cursor: default;
+}
+
+/*iOS*/
+
+@media only screen and (-moz-min-device-pixel-ratio: 2), only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
+.fancyselect .arrows {
+background: url(../img/sel_arr.png) center center no-repeat;
+background-size: 100%;
+}
+}
+.fancyselect.ios select {
+padding-right: 25px;
+-webkit-text-size-adjust: none;
+}
