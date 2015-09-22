@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Тестовое задание для Тутми</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href='http://fonts.googleapis.com/css?family=Roboto:300,400,700, 800&subset=latin,cyrillic-ext' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/style.css">
+
+
+    <script>
+        !window.jQuery && document.write('<script src="jquery-1.11.3.min.js"><\/script>');
+    </script>
+    <!-- include bxSlider plugin -->
+    <script src="js/jquery.bxslider.js"></script>
+    <link href="css/jquery.bxslider.css" rel="stylesheet" />
+    <!-- include countdown plugin -->
+    <script src="js/jquery.plugin.js"></script>
+    <script src="js/jquery.countdown.js"></script>
+    <script type="text/javascript" src="js/jquery.countdown-ru.js"></script>
+    <!-- include fancybox plugin -->
+    <script type="text/javascript" src="js/jquery.fancybox.pack.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/jquery.fancybox.css" media="screen" />
+    <!-- include carouFredSel plugin -->
+    <script type="text/javascript" language="javascript" src="js/jquery.carouFredSel.js"></script>
+
+    <!-- optionally include helper plugins -->
+    <script type="text/javascript" language="javascript" src="js/helper-plugins/jquery.mousewheel.min.js"></script>
+    <script type="text/javascript" language="javascript" src="js/helper-plugins/jquery.touchSwipe.min.js"></script>
+    <script type="text/javascript" language="javascript" src="js/helper-plugins/jquery.transit.min.js"></script>
+    <script type="text/javascript" language="javascript" src="js/helper-plugins/jquery.ba-throttle-debounce.min.js"></script>
+    <script type="text/javascript" language="javascript" src="js/main.js"></script>
+    <link rel="stylesheet" href="css/queryLoader.css" type="text/css" />
+    <script type='text/javascript' src='js/queryLoader.js'></script>
+
+    <!--[if IE]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <link href="css/ie.css" rel="stylesheet" type="text/css" media="screen" />
+    <![endif]-->
+
+</head>
+<body>
+<div class="order" id="order">
+    <h2>Отправьте заявку</h2>
+    <p class="pf-1">наш менеджер свяжется с вами</p>
+    <form class="order-wrap-container" action="#">
+        <p><input type="text" class="text" name="name" placeholder="Ваше имя"></p>
+        <p><input type="text" class="text" name="phone" placeholder="Ваш телефон"></p>
+        <p><input type="text" class="text" name="email" placeholder="Ваш e-mail"></p>
+        <p><textarea class="comment" name="comment" placeholder="Комментарий" rows="10" cols="25"></textarea></p>
+        <p><input  class="button btn-5" type="submit" value="Отправить" >
+            <!--a href="#"  id="log_cancel">Отмена</a--></p>
+    </form>
+
+</div>
+    <header class="h-rel">
+        <div class="content">
+            <div class="h-left">
+                <div>+7 499 685 12 06</div>
+                <div>+7 495 638 50 54</div>
+            </div>
+            <div class="h-right">
+                <div class="callme"><a href="#">Зкакзать звонок</a></div>
+            </div>
+        </div>
+    </header>
+    <header class="h-fixed">
+        <div class="content">
+            <div class="h-left">
+                <div>+7 499 685 12 06</div>
+                <div>+7 495 638 50 54</div>
+            </div>
+            <div class="h-right">
+                <div class="callme"><a href="#">Зкакзать звонок</a></div>
+            </div>
+        </div>
+    </header>
+
+    <section class="sec-1" >
+        <div class="slider-1" >
+            <ul class="bxslider-1">
+                <li><div style="background:url('img/sl-1-1.jpg');"></div></li>
+                <li><div style="background:url('img/sl-1-2.jpg');"></div></li>
+                <li><div style="background:url('img/sl-1-3.jpg');"></div></li>
+            </ul>
+        </div>
+        <div class="content">
+            <h1>Итальянская мебель<br/>на заказ</h1>
+            <p class="slogan">Осуществи мечту • Впусти Италию в свой дом</p>
+
+        <div class="slider-2">
+            <ul class="bxslider-2">
+                <li><img src="img/sl-2-1.jpg" /></li>
+                <li><img src="img/sl-2-2.jpg" /></li>
+                <li><img src="img/sl-2-3.jpg" /></li>
+            </ul>
+        </div>
+            <p class="p-1">При покупке  кухонного гарнитура скидка 20 %</p>
+        <div class="wr-counter">
+            <p>до конца акции осталось</p>
+            <div id="countdown" class="countdown"></div>
+        </div>
+            <div class="button order-btn btn-1">
+                <a class="fancybox" href="#order" >Заказать</a>
+            </div>
+        </div>
+    </section>
+     <section class="sec-2">
+         <div class="content">
+             <p class="p-2">Кухня — самое уютное<br>
+                 место в доме, где...</p>
+             <div class="boxes clearfix">
+
+                 <div class="box-col"><div class="box box-img"><img src="img/box-pic-1.jpg" alt=""></div><div class="box box-text">пахнет вкусной едой</div></div>
+                 <div class="box-col"><div class="box box-text">закипая, шумит чайник</div><div class="box box-img"><img src="img/box-pic-2.jpg" alt=""></div></div>
+                 <div class="box-col"><div class="box box-img"><img src="img/box-pic-3.jpg" alt=""></div><div class="box box-text">на стол ставят зажжённые свечи</div></div>
+                 <div class="box-col"><div class="box box-text">блестят столовые приборы</div><div class=" box box-img"><img src="img/box-pic-4.jpg" alt=""></div></div>
+             </div>
+             <p class="p-3">Хотите, чтобы она стала ещё уютнее  и крвсивее?</p>
+             <p class="p-4">Выбирайте кухонные гарнитуры фабрики <span>Lube</span>!</p>
+             <div class="steps clearfix">
+                <div class="button order-btn btn-2">
+                     <a class="fancybox" href="#order" >Хочу кухню</a>
+                 </div>
+                 <div class="step-col step-1"><span class="step-num">1</span><span class="step-text">из экологически чистых материалов</span></div>
+                 <div class="step-col step-2"><span class="step-num">2</span><span class="step-text">стильные</span></div>
+                 <div class="step-col step-3"><span class="step-num">3</span><span class="step-text">надёжные</span></div>
+                 <div class="step-col step-4"><span class="step-num">4</span><span class="step-text">современные</span></div>
+                 <div class="step-col step-5"><span class="step-num">5</span><span class="step-text">функциональные</span></div>
+                 <div class="button order-btn btn-3">
+                     <a class="fancybox" href="#order">Выбираю Италию </a>
+                 </div>
+             </div>
+
+         </div><!--content-->
+     </section>
+    <section class="sec-3">
+        <div class="content">
+        <p class="p-5"><span>«Контур Интерьерные решения»</span> работает в разных ценовых сегментах – от «эконом» до «премиум»,<br/>
+            а цены ниже средних на рынке</p>
+        </div>
+        <div class="carusel list_carousel  clearfix">
+            <ul id="foo4">
+                <li class="c-item"><img src="img/sl-3-1.jpg" alt="">
+                    <div class="c-overlay">
+                        <div class="button order-btn btn-4">
+                            <a class="fancybox" href="#order">Выбираю Италию <span>за разумные деньги</span></a>
+                        </div>
+                    </div>
+                </li>
+                <li class="c-item"><img src="img/sl-3-2.jpg" alt="">
+                    <div class="c-overlay">
+                        <div class="button order-btn btn-4">
+                            <a class="fancybox" href="#order">Выбираю Италию <span>за разумные деньги</span></a>
+                        </div>
+                    </div>
+                </li>
+                <li class="c-item"><img src="img/sl-3-3.jpg" alt="">
+                    <div class="c-overlay">
+                        <div class="button order-btn btn-4">
+                            <a class="fancybox" href="#order">Выбираю Италию <span>за разумные деньги</span></a>
+                        </div>
+                    </div>
+                </li>
+                <li class="c-item"><img src="img/sl-3-4.jpg" alt="">
+                    <div class="c-overlay">
+                        <div class="button order-btn btn-4">
+                            <a class="fancybox" href="#order">Выбираю Италию <span>за разумные деньги</span></a>
+                        </div>
+                    </div>
+                </li>
+                <li class="c-item"><img src="img/sl-3-5.jpg" alt="">
+                    <div class="c-overlay">
+                        <div class="button order-btn btn-4">
+                            <a class="fancybox" href="#order">Выбираю Италию <span>за разумные деньги</span></a>
+                        </div>
+                    </div>
+                </li>
+                <li class="c-item"><img src="img/sl-3-6.jpg" alt="">
+                    <div class="c-overlay">
+                        <div class="button order-btn btn-4">
+                            <a class="fancybox" href="#order">Выбираю Италию <span>за разумные деньги</span></a>
+                        </div>
+                    </div>
+                </li>
+                <li class="c-item"><img src="img/sl-3-7.jpg" alt="">
+                    <div class="c-overlay">
+                        <div class="button order-btn btn-4">
+                            <a class="fancybox" href="#order">Выбираю Италию <span>за разумные деньги</span></a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+
+        </div>
+    </section>
+    <section class="sec-4">
+        <div class="content">
+            <p class="p-4">Вы оцените</p>
+        </div>
+        <div class="pluses clearfix">
+            <div class="pl_box"><div class="pl-img"><img src="img/pl-1.png" alt=""></div><div class="pl-text">Модные решения</div></div>
+            <div class="pl_box"><div class="pl-img"><img src="img/pl-2.png" alt=""></div><div class="pl-text">Индивидуальный подход к клиентам</div></div>
+            <div class="pl_box"><div class="pl-img"><img src="img/pl-3.png" alt=""></div><div class="pl-text">Нестандартный дизайн</div></div>
+            <div class="pl_box"><div class="pl-img"><img src="img/pl-4.png" alt=""></div><div class="pl-text">Высокое качество</div></div>
+            <div class="pl_box"><div class="pl-img"><img src="img/pl-5.png" alt=""></div><div class="pl-text">Возможность разработки эскизных проектов</div></div>
+            <div class="pl_box"><div class="pl-img"><img src="img/pl-6.png" alt=""></div><div class="pl-text">Полный спектр услуг</div></div>
+        </div>
+    </section>
+</body>
+<script>
+    QueryLoader.init();
+</script>
+
+</html>
