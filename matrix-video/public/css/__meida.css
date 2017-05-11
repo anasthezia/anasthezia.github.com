@@ -1,0 +1,21 @@
+@media screen and (max-width: 767px) {
+  .header .navbar__sec-1 .navbar-brand {
+    width: auto;
+  }
+  .header .navbar__sec-2 .main-menu li {
+    display: block;
+  }
+  .footer .footer-info {
+    text-align: left;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .footer .navbar-right {
+    margin-right: 0;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .footer .navbar-right {
+    margin-right: 0;
+  }
+}
