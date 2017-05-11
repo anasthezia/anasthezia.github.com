@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Vanilla Slider</title>
+</head>
+<body>
+<div class="container">
+  <ul id="slides">
+    <li class="slide showing"></li>
+    <li class="slide"></li>
+    <li class="slide"></li>
+  </ul>
+  <div class="buttons">
+    <button class="controls" id="previous">&lt;</button>
+
+    <button class="controls" id="pause">&#10074;&#10074;</button>
+
+    <button class="controls" id="next">&gt;</button>
+  </div>
+</div>
+
+
+<style>
+  /*
+  essential styles:
+  these make the slideshow work
+  */
+  #slides{
+    position: relative;
+    width: 600px;
+    height: 300px;
+    padding: 0px;
+    margin: 0px;
+    list-style-type: none;
+  }
+
+  .slide{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width:100%;
+    height: 100%;
+    opacity: 0;
+    z-index: 1;
+
+    -webkit-transition: opacity 1s;
+    -moz-transition: opacity 1s;
+    -o-transition: opacity 1s;
+    transition: opacity 1s;
+  }
+
+  .showing{
+    opacity: 1;
+    z-index: 2;
+  }
+
+
+  .controls{
+    display: none;
+  }
+
+
+  /*
+  non-essential styles:
+  just for appearance; change whatever you want
+  */
+
+  .slide{
+    font-size: 40px;
+    box-sizing: border-box;
+    background: #333;
+    color: #fff;
+    background-size: cover;
+  }
+
+  /* http://unrestrictedstock.com/wp-content/uploads/snowy-winter-vignette-bokeh-night-snow-falling-free-stock-photo.jpg */
+  .slide:nth-of-type(1){
+    background-color: red;
+    background-size: cover;
+    background-image: url('https://lh3.googleusercontent.com/-oeRmI5eHhtE/Ve_7i3U1NvI/AAAAAAAAM9U/-uKveF36f4g/s550-Ic42/vanilla.png');
+  }
+
+  /* http://www.dawghousedesignstudio.com/wp-content/uploads/2010/01/25/free-stock-photos-1.jpg */
+  .slide:nth-of-type(2){
+    background-color: orange;
+    background-size: cover;
+    background-image: url('https://i.ytimg.com/vi/-OqZzV__hts/maxresdefault.jpg');
+  }
+
+  /* http://www.stockfreeimages.com/static/homepage/waterfall-free-stock-photo-244915.jpg */
+  .slide:nth-of-type(3){
+    background-color: green;
+    background-size: cover;
+    background-image: url('http://www.campusets.com/images/vanilla-js.jpg');
+  }
+
+  .controls{
+    background: #333;
+    color: #fff;
+    border: none;
+    padding: 20px 0px;
+    font-size: 20px;
+    cursor: pointer;
+    border: 2px solid #fff;
+    margin: 10px 0px 0px 10px;
+    width: 70px;
+  }
+
+  .controls:hover,
+  .controls:focus{
+    background: #eee;
+    color: #333;
+  }
+
+  .container{
+    position: relative;
+  }
+
+  .buttons{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: 10;
+    font-size: 0px;
+  }
+</style>
+
+<script>
+  var controls = document.querySelectorAll('.controls');
+  for(var i=0; i<controls.length; i++){
+    controls[i].style.display = 'inline-block';
+  }
+
+  var slides = document.querySelectorAll('#slides .slide');
+  var currentSlide = 0;
+  var slideInterval = setInterval(nextSlide,2000);
+
+  function nextSlide(){
+    goToSlide(currentSlide+1);
+  }
+
+  function previousSlide(){
+    goToSlide(currentSlide-1);
+  }
+
+  function goToSlide(n){
+    slides[currentSlide].className = 'slide';
+    currentSlide = (n+slides.length)%slides.length;
+    slides[currentSlide].className = 'slide showing';
+  }
+
+  var playing = true;
+  var pauseButton = document.getElementById('pause');
+
+  function pauseSlideshow(){
+    pauseButton.innerHTML = '&#9658;'; // play character
+    playing = false;
+    clearInterval(slideInterval);
+  }
+
+  function playSlideshow(){
+    pauseButton.innerHTML = '&#10074;&#10074;'; // pause character
+    playing = true;
+    slideInterval = setInterval(nextSlide,2000);
+  }
+
+  pauseButton.onclick = function(){
+    if(playing){ pauseSlideshow(); }
+    else{ playSlideshow(); }
+  };
+
+  var next = document.getElementById('next');
+  var previous = document.getElementById('previous');
+
+  next.onclick = function(){
+    pauseSlideshow();
+    nextSlide();
+  };
+  previous.onclick = function(){
+    pauseSlideshow();
+    previousSlide();
+  };
+</script>
+</body>
+</html>

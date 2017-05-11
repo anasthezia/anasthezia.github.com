@@ -1,0 +1,35 @@
+@keyframes atop {
+  0% {
+    transform: translateY(-20px);
+  }
+}
+
+@keyframes abottom {
+  0% {
+    /*display: block;*/
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1 !important;
+  }
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes reveal-header {
+  0% {
+    opacity: 0;
+    transform: translateY(-50%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
