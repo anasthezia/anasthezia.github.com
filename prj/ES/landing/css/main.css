@@ -551,12 +551,59 @@ button {
     top: 0;
     bottom: 0;
     opacity:0;
-    background:
+   /* background:
         -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 80, from(rgba(0,0,055,0.07)), to(rgba(255,255,255,0.025)));
         -moz-radial-gradient(50% 50%, circle, rgba(0,0,055,0.07) 0, rgba(255,255,255,0.025) 60%);
-        gradient(radial, 50% 50%, 0, 50% 50%, 80, from(rgba(0,0,055,0.07)), to(rgba(255,255,255,0.025)));
+        gradient(radial, 50% 50%, 0, 50% 50%, 80, from(rgba(0,0,055,0.07)), to(rgba(255,255,255,0.025)));*/
     transition:all 0.5s ease;
 }
+
+.client.client-johnson:before,
+.client.client-irrgames:before{
+    background:
+        -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 80, from(rgba(239,47,59,0.1)), to(rgba(255,255,255,0.025)));
+        -moz-radial-gradient(50% 50%, circle, rgba(239,47,59,0.1) 0, rgba(255,255,255,0.025) 60%);
+        gradient(radial, 50% 50%, 0, 50% 50%, 80, from(rgba(239,47,59,0.1)), to(rgba(255,255,255,0.025)));
+}
+
+.client.client-pagefreezer:before,
+.client.client-openbank:before,
+.client.client-bitpool:before,
+.client.client-gjestsnow:before{
+    background:
+        -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 80, from(rgba(125,199,239,0.1)), to(rgba(255,255,255,0.025)));
+        -moz-radial-gradient(50% 50%, circle, rgba(125,199,239,0.1) 0, rgba(255,255,255,0.025) 60%);
+        gradient(radial, 50% 50%, 0, 50% 50%, 80, from(rgba(125,199,239,0.1)), to(rgba(255,255,255,0.025)));
+}
+
+
+.client.client-mesitis:before,
+.client.client-palmetto:before{
+    background:
+        -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 80, from(rgba(155,74,78,0.1)), to(rgba(255,255,255,0.025)));
+        -moz-radial-gradient(50% 50%, circle, rgba(155,74,78,0.1) 0, rgba(255,255,255,0.025) 60%);
+        gradient(radial, 50% 50%, 0, 50% 50%, 80, from(rgba(155,74,74,0.1)), to(rgba(255,255,255,0.025)));
+}
+
+
+
+.client.client-kopi:before{
+    background:
+        -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 80, from(rgba(234,65,32,0.1)), to(rgba(255,255,255,0.025)));
+        -moz-radial-gradient(50% 50%, circle, rgba(234,65,32,0.1) 0, rgba(255,255,255,0.025) 60%);
+        gradient(radial, 50% 50%, 0, 50% 50%, 80, from(rgba(234,65,32,0.1)), to(rgba(255,255,255,0.025)));
+}
+
+
+.client.client-canopy:before,
+.client.client-gaia:before{
+    background:
+        -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 80, from(rgba(1,80,48,0.1)), to(rgba(255,255,255,0.025)));
+        -moz-radial-gradient(50% 50%, circle, rgba(1,80,48,0.1) 0, rgba(255,255,255,0.025) 60%);
+        gradient(radial, 50% 50%, 0, 50% 50%, 80, from(rgba(1,80,48,0.1)), to(rgba(255,255,255,0.025)));
+}
+
+
 .client:hover:before{
     opacity:1;
 }
