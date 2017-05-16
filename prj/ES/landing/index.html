@@ -3,14 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <title>Title</title>
-  <link rel="stylesheet" href="css/lory.css">
-  <link rel="stylesheet" href="css/fonts.css">
-  <link rel="stylesheet" href="css/animations.css">
-  <link rel="stylesheet" href="css/main.css">
   <!-- bootstrap -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="css/lory.css">
+  <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
 <!--<div class="contact-tab">Get in Touch</div>-->
@@ -56,18 +56,17 @@
         Contact
       </li>
     </ul>
-    <a class="logo"><img src="img/logo-1.png"></a>
+    
     </section>
 
   </nav>
-  <div id="goal" class="header-content">
-    <section>
-
-    <div data-scroll="abottom-fast">Exceeding expectations of our <i>clients</i></div>
-    <button data-scroll="fade-delay" onclick="EPPZScrollTo.scrollVerticalToElementById('footer', 0);">Contact Us
-    </button>
-    </section>
-
+  <div id="goal" class="header-content container">
+    <!-- <a class="logo"><img src="img/ES_logo_2.svg"></a> -->
+        <h1 class="header-title"><img src="img/ES_logo_2.svg" data-scroll="abottom-fast"></h1>
+        <div  class="header-subtitle" data-scroll="abottom">Exceeding expectations of our <i>clients</i></div>
+        <button class="button header-btn" data-scroll="abottom-slow" 
+        onclick="EPPZScrollTo.scrollVerticalToElementById('footer', -5000);">Contact Us
+        </button>
   </div>
 
 </header>
@@ -86,7 +85,7 @@
     </div>
   </article>
 
-  <section class="our-clients">
+  <article class="our-clients">
     <div class="container">
       <div class="title">our clients</div>
       <ul class="clients row">
@@ -163,7 +162,7 @@
         </div>
       </div>
     </div>
-  </section>
+  </article>
   <article data-scroll="fade-delay-fast" class="grey">
     <div class="title">Recent work</div>
     <div class="sub-title">
@@ -361,12 +360,7 @@
         <a href="tel:380980584638">+7 (918) 052-22-22</a>
         <!--<br/><a href="mailto:hello@exceed.solutions">staff@exceed.solutions</a>-->
       </div>
-      <!--<div class="address">-->
-      <!--<p class="address-title">Development, Taganrog</p>-->
-      <!--<address>347924, St. Turubarovih, 24</address>-->
-      <!--<a href="tel:380980584638">+7 (444) 222-11-33</a>-->
-      <!--<br/><a href="mailto:hello@exceed.solutions">hello@exceed.solutions</a>-->
-      <!--</div>-->
+
       <div class="address">
         <p class="address-title">Development, Novocherkassk</p>
         <address>346400, St Moskovskaya 56</address>
@@ -377,7 +371,7 @@
   </article>
 
 </main>
-<footer class="footer">
+<footer class="footer" id="footer">
   <article>
     <div class="sub-title sub-title-footer">
       Want to discuss your project?

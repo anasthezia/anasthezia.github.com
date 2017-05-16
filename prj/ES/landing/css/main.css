@@ -42,10 +42,10 @@ a:hover {
     text-decoration: underline;
 }
 
-section {
+/*section {
     max-width: 80%;
     margin: 0 auto;
-}
+}*/
 
 .title-portfolio {
     font-family: freight-display-pro, sans-serif;
@@ -100,9 +100,34 @@ header {
 }
 
 .header-content {
-    position: relative;
+    position: absolute;
+    transform: translateY(-50%);
+    width: 100%;
+    top: 50%;
+    
+}
+.header-title {
+    text-align: center;   
+    margin: 0; 
+}
+.header-title img {
+    height: 80px;
+
 }
 
+.header-subtitle{
+    text-align: center;
+    font-size: 40px;
+    line-height: 1;
+    margin: 10px 0;
+}
+
+.header-btn {
+    display: block;
+    margin: 40px auto 0;
+    font-size: 40px;
+    line-height: 1;
+}
 .float-clear {
     clear: both;
     margin-top: 20px;
@@ -309,6 +334,7 @@ footer {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    background-position-x: center;
 }
 
 .sub-title {
