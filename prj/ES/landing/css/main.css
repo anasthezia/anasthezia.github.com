@@ -827,6 +827,21 @@ background: rgba(255, 255, 255, 0.7);
     body{
         font-size: 18px;
     }
+    .over-black{
+        display: none;
+    }
+    header {
+        min-height: 50vh;
+        background: #0f2439;
+    }
+
+    .header-background {
+        height: 50vh;
+    }
+
+    .header-background video {
+        display: none;
+    }
     .header-title img {
      height: 40px; 
     }
@@ -841,10 +856,35 @@ background: rgba(255, 255, 255, 0.7);
     main {
         margin-bottom: 340px;
     }
+    .sub-title {
+        font-size: 2rem;
+        line-height: 3rem;
+    }
+    .cont {
+        font-size: 1.2rem;
+        line-height: 2rem;
+    }
+    .client{
+        height: 80px;
+        margin-bottom: 0;
+    }
     .contacts .sub-title{
         margin-top: 0;
         margin-bottom: 0;
         line-height: 2;
+    }
+    .carousel-cell{
+        padding: 0 20px;
+    }
+    .flickity-prev-next-button.previous {
+        left: -10px;
+    }
+    .flickity-prev-next-button.next {
+        right: -10px;
+    }
+    .blog-video-embed iframe{
+        width: 100%;
+        height: auto;
     }
     address {
         margin-bottom: 5px;
