@@ -79,7 +79,7 @@ header {
     font-size: 6.5625rem;
     letter-spacing: .125rem;
     line-height: 7.5rem;
-    min-height: 50rem;
+    min-height: 50vw;
     z-index: 100;
 }
 
@@ -623,7 +623,7 @@ button {
     padding: 0;
 }
 .projects-list__item {
-    margin-bottom:40px;
+    margin-bottom: 30px;
 }
 
 .project, .project-prev{
