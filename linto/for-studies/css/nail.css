@@ -1,0 +1,250 @@
+.delete-header {
+  width: 100%;
+  height: 14rem;
+  background: #101010; }
+
+.nail-wrapper {
+  max-width: 130rem;
+  margin: 0 auto 6rem;
+  font-family: 'Roboto'sans-serif;
+  font-style: normal; }
+
+.main {
+  padding: 0 5%; }
+
+section .nail-promote {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 2rem;
+  line-height: 1.2;
+  margin-top: 4rem;
+  padding: 1rem; }
+
+.nail-cashbacks {
+  margin: 4rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  min-height: 38rem; }
+
+.cashback-right {
+  max-width: 32rem;
+  background-color: #010101;
+  color: #fff;
+  padding: 3rem 4.5rem;
+  text-align: center; }
+  .cashback-right__heading {
+    margin: 1.5rem 0 2rem;
+    line-height: 1.2;
+    font-size: 3rem; }
+  .cashback-right__text {
+    text-align: left; }
+
+.cashback-left {
+  max-width: 65rem; }
+  .cashback-left__footer {
+    margin-top: 1rem;
+    padding: .5rem 2rem; }
+    .cashback-left__footer .exp-line {
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 14px;
+      line-height: 16px; }
+    .cashback-left__footer:before {
+      display: block;
+      content: '';
+      max-width: 35rem;
+      height: 1px;
+      margin: 0 0 1.5rem -2rem;
+      background: #010101; }
+
+.cashback-left-head__left {
+  border-bottom: 2px solid #010101;
+  padding: .8rem 0;
+  font-weight: 500;
+  font-size: 3.6rem; }
+
+.cashback-left-head__right {
+  text-align: right;
+  font-size: 2.4rem;
+  text-align: right;
+  padding: .8rem 0; }
+
+.cashback-left-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  margin-top: 4rem; }
+
+.cashback-amount {
+  width: 22rem;
+  min-height: 17rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+  .cashback-amount__cut {
+    font-style: italic;
+    font-weight: bold;
+    font-size: 7rem;
+    text-align: center; }
+  .cashback-amount__condition {
+    font-weight: 300;
+    font-size: 1.8rem;
+    line-height: 1.2;
+    text-align: center; }
+  .cashback-amount__add {
+    font-weight: 300;
+    font-size: 1.2rem;
+    text-align: center;
+    line-height: 1.2; }
+
+.promo-line {
+  text-align: right;
+  padding: .5rem;
+  font-size: 2.4rem; }
+  .promo-line__mark {
+    font-weight: bold; }
+    .promo-line__mark sup {
+      font-size: 1.2rem; }
+
+.nail-list {
+  margin: 4rem 0; }
+  .nail-list__heading {
+    font-size: 4.2rem; }
+    .nail-list__heading sup {
+      font-size: 1.9rem; }
+  .nail-list__list {
+    list-style-type: none;
+    max-width: 72rem;
+    margin: 0 auto;
+    margin: 4rem auto; }
+    .nail-list__list li {
+      font-size: 1.7rem;
+      margin-bottom: 1.6rem;
+      position: relative; }
+    .nail-list__list li:before {
+      content: "\2014";
+      position: absolute;
+      left: -3rem; }
+
+.nail-merits {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin: 4rem 0;
+  border-top: 1px solid #010101;
+  border-bottom: 1px solid #010101; }
+  .nail-merits .merit-box {
+    text-align: center;
+    padding: 1rem 2rem; }
+    .nail-merits .merit-box__head {
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 1.8rem;
+      margin: 1.5rem 0 .5rem; }
+    .nail-merits .merit-box__info {
+      line-height: 1.2; }
+
+.icon-present {
+  background: url(../imgs/nail-icons/icon-present.png) no-repeat; }
+
+.icon-car {
+  background: url(../imgs/nail-icons/icon-car.png) no-repeat; }
+
+.icon-file {
+  background: url(../imgs/nail-icons/icon-file.png) no-repeat; }
+
+.icon-bottle {
+  background: url(../imgs/nail-icons/icon-bottle.png) no-repeat; }
+
+.merit-icon {
+  display: block;
+  margin: 0 auto;
+  width: 12rem;
+  height: 12rem;
+  background-position: center; }
+
+@media only screen and (max-width: 980px) {
+  .nail-cashbacks {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
+  .cashback-left {
+    width: 100%;
+    max-width: none; }
+  .cashback-right {
+    width: 100%;
+    max-width: unset;
+    margin: 2rem auto;
+    padding: 3rem; } }
+
+@media only screen and (max-width: 780px) {
+  .nail-merits {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
+    .nail-merits .merit-box {
+      width: 50%;
+      max-width: 30rem; } }
+
+@media only screen and (max-width: 480px) {
+  .cashback-left-body {
+    display: block; }
+  .cashback-amount {
+    width: auto;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row; }
+    .cashback-amount__row {
+      text-align: left;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      padding: 1rem .2rem 1rem 1rem; }
+    .cashback-amount__cut {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      font-size: 5.5rem; }
+    .cashback-amount__condition {
+      text-align: left; }
+    .cashback-amount__add {
+      text-align: left; }
+  .cashback-right {
+    width: 95%; }
+  .nail-list__heading {
+    font-size: 3.5rem; }
+  .nail-list__list {
+    margin: 2rem auto; }
+  .nail-merits {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
+    .nail-merits .merit-box {
+      width: 85%; } }
