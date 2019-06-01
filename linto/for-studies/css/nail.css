@@ -6,7 +6,7 @@
 .nail-wrapper {
   max-width: 130rem;
   margin: 0 auto 6rem;
-  font-family: 'Roboto'sans-serif;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-style: normal; }
 
 .main {
@@ -35,21 +35,26 @@ section .nail-promote {
   background-color: #010101;
   color: #fff;
   padding: 3rem 4.5rem;
-  text-align: center; }
+  text-align: center; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;}
   .cashback-right__heading {
     margin: 1.5rem 0 2rem;
     line-height: 1.2;
     font-size: 3rem; }
+  .cashback-right__heading span {
+    display: block;
+  }
   .cashback-right__text {
     text-align: left; }
 
 .cashback-left {
   max-width: 65rem; }
   .cashback-left__footer {
-    margin-top: 1rem;
+    margin-top: 4rem;
     padding: .5rem 2rem; }
     .cashback-left__footer .exp-line {
-      font-family: Roboto;
       font-style: normal;
       font-weight: 300;
       font-size: 14px;
@@ -104,6 +109,7 @@ section .nail-promote {
     font-weight: 300;
     font-size: 1.8rem;
     line-height: 1.2;
+    margin: 1rem 0;
     text-align: center; }
   .cashback-amount__add {
     font-weight: 300;
@@ -114,7 +120,7 @@ section .nail-promote {
 .promo-line {
   text-align: right;
   padding: .5rem;
-  font-size: 2.4rem; }
+  font-size: 1.7rem; }
   .promo-line__mark {
     font-weight: bold; }
     .promo-line__mark sup {
@@ -128,12 +134,13 @@ section .nail-promote {
       font-size: 1.9rem; }
   .nail-list__list {
     list-style-type: none;
-    max-width: 72rem;
+    max-width: 60%;
     margin: 0 auto;
     margin: 4rem auto; }
     .nail-list__list li {
       font-size: 1.7rem;
       margin-bottom: 1.6rem;
+      padding-left: 10%;
       position: relative; }
     .nail-list__list li:before {
       content: "\2014";
@@ -147,17 +154,16 @@ section .nail-promote {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  margin: 4rem 0;
+  margin: 7rem 0;
   border-top: 1px solid #010101;
   border-bottom: 1px solid #010101; }
   .nail-merits .merit-box {
     text-align: center;
-    padding: 1rem 2rem; }
+    padding: 4rem 1rem; }
     .nail-merits .merit-box__head {
-      font-family: Roboto;
+      font-size: 1.4rem;
       font-style: normal;
       font-weight: 600;
-      font-size: 1.8rem;
       margin: 1.5rem 0 .5rem; }
     .nail-merits .merit-box__info {
       line-height: 1.2; }
@@ -176,9 +182,9 @@ section .nail-promote {
 
 .merit-icon {
   display: block;
-  margin: 0 auto;
-  width: 12rem;
-  height: 12rem;
+  margin: 0 auto 3rem;
+  width: 10rem;
+  height: 10rem;
   background-position: center; }
 
 @media only screen and (max-width: 980px) {
@@ -187,6 +193,7 @@ section .nail-promote {
     flex-wrap: wrap; }
   .cashback-left {
     width: 100%;
+    margin-bottom: 2rem;
     max-width: none; }
   .cashback-right {
     width: 100%;
@@ -200,13 +207,17 @@ section .nail-promote {
     flex-wrap: wrap; }
     .nail-merits .merit-box {
       width: 50%;
-      max-width: 30rem; } }
+      max-width: 30rem; } 
+    .cashback-right__heading span {
+     display: inline;}
+    }
 
 @media only screen and (max-width: 480px) {
   .cashback-left-body {
     display: block; }
   .cashback-amount {
     width: auto;
+    min-height: auto;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
     -ms-flex-direction: row;
@@ -223,7 +234,7 @@ section .nail-promote {
       -webkit-box-pack: center;
       -ms-flex-pack: center;
       justify-content: center;
-      padding: 1rem .2rem 1rem 1rem; }
+      padding: 1rem .2rem 1rem 1.6rem; }
     .cashback-amount__cut {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -231,16 +242,26 @@ section .nail-promote {
       -webkit-box-align: center;
       -ms-flex-align: center;
       align-items: center;
-      font-size: 5.5rem; }
+      font-size: 4.8rem; }
     .cashback-amount__condition {
       text-align: left; }
     .cashback-amount__add {
       text-align: left; }
   .cashback-right {
     width: 95%; }
+  .cashback-right__heading {
+    font-size: 2.2rem;}
+
+  .cashback-right__text {
+    font-size: 1.6rem; 
+  }
+  .nail-list {
+    margin: 4rem auto;
+  }
   .nail-list__heading {
     font-size: 3.5rem; }
   .nail-list__list {
+    max-width: 75%;
     margin: 2rem auto; }
   .nail-merits {
     -webkit-box-pack: center;
